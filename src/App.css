@@ -1,0 +1,66 @@
+
+
+.fullscreen-video {
+  width: 100vw;
+  height: 100vh;
+}
+
+.inicio{
+  font-weight: bold;
+  font-size:  25px;
+  font-family: "Times New Normal";
+  color: white;
+  text-align: center;
+  padding: 150px;
+}
+
+.escalera{
+  background-color: cornflowerblue;
+  padding: 150px;
+}
+
+.espejo{
+background: grey;
+padding: 150px;
+}
+
+.molino{
+  background: gray;
+  padding: 150px;
+}
+
+.escaleraf{
+  padding: 50px;
+  align-items: flex-end;
+
+}
+
+.escalera p{
+  font: bolder 25px serif;
+  font-family: "typewcond";
+  text-align: right;
+
+}
+
+.libro{
+  padding: 50px;
+  align-items: baseline;
+}
+
+.libros{
+  display: block;
+margin-left: auto;
+}
+
+.espejito{
+  display: block;
+  margin-left: auto;
+}
+
+.atardecer{
+padding-left: 100px;
+}
+
+ella{
+  padding-top: 40px;
+}
