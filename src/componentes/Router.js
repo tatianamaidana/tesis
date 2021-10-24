@@ -5,6 +5,8 @@ import Vista2 from "../vistas/Vista2";
 import Escalera from "../vistas/Vista3";
 import Home from "../vistas/Home";
 import PruebaComentarios from "../vistas/PruebaComentarios";
+import Vista4 from "../vistas/Vista4";
+
 export default function App() {
   return (
     <Router>
@@ -20,6 +22,10 @@ export default function App() {
 
           <Route path="/vista3">
             <Escalera />
+          </Route>
+
+          <Route path="/vista4">
+            <Vista4 />
           </Route>
 
           <Route path="/prueba">
