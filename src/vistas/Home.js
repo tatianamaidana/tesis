@@ -24,7 +24,7 @@ function Home() {
         <source src="/assets/video/cielo.mp4" type="video/mp4" />
       </video>
 
-      <Link to="users">
+      <Link to="vista4">
          <img class="libro" src="/assets/imagen/libros2.png"/>
       </Link>
 
