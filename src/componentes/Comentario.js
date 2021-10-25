@@ -1,130 +1,60 @@
-import React, { useContext, useState } from "react";
-import apiService from "../service/apiService";
+import React, { useContext, useEffect, useState } from "react";
 
 import { DataContext } from "../service/DataProvider";
 
-export default function Comentario() {
+export default function Comentario({ numero = 0 }) {
   const {
     data,
-    loading,
-    loadingMore,
-    error,
-    partialCount,
-    totalCount,
-    pagina,
-    localData,
-    setLocalData,
+    // loading,
+    // loadingMore,
+    // error,
+    // partialCount,
+    // totalCount,
+    // pagina,
+    // localData,
+    // setLocalData,
   } = useContext(DataContext);
 
-  const enviarComentario = (e) => {
-    e.preventDefault();
-    console.log("Envianndo");
-    console.log(comentario);
+  const [random] = useState(Math.random() * 10);
+  const [choice, setChoice] = useState();
 
-    let path = window.location.pathname;
-    path = path.replace("/", "");
+  useEffect(() => {
+    if (random < 2.5) {
+      setChoice(1);
+    } else if (random >= 2.5 && random < 5) {
+      setChoice(2);
+    } else if (random >= 5 && random < 7.5) {
+      setChoice(3);
+    } else if (random >= 7.5) {
+      setChoice(4);
+    }
+  }, [random]);
 
-    apiService(
-      "comments/",
-      "POST",
-      { path, user: { nombre, apellido, email }, text: comentario },
-      true,
-      null
-    );
-  };
-
-  const onChange = (e) => {
-    setComentario(e.target.value);
-  };
-  const onChangeNombre = (e) => {
-    setNombre(e.target.value);
-  };
-  const onChangeApellido = (e) => {
-    setApellido(e.target.value);
-  };
-  const onChangeEmail = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const [comentario, setComentario] = useState("");
-  const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
-  const [email, setEmail] = useState("");
-
-  return (
-    <div>
-      <div>
-        <p>Comment</p>
-        <img
-          class="papel 1.png"
-          widht={500}
-          height={300}
-          src="/assets/imagen/papel 1.png"
-        />
-
-        <img
-          class="papel 2.png"
-          widht={500}
-          height={300}
-          src="/assets/imagen/papel 2.png"
-        />
-
-        <img
-          class="papel 3.png"
-          widht={500}
-          height={300}
-          src="/assets/imagen/papel 3.png"
-        />
-
-        <img
-          class="papel 4.png"
-          widht={500}
-          height={300}
-          src="/assets/imagen/papel 4.png"
-        />
-      </div>
-
-      <div>
-        <p>Comment</p>
-        <p>{data ? data[0]?.text : null}</p>
-        <p>{data ? data[0]?.user.nombre : null}</p>
-        <p>{data ? data[0]?.user.apellido : null}</p>
-      </div>
-
-      <div>
-        <h1> Escribir comentario </h1>
-        <form onSubmit={enviarComentario}>
-          <h3>Comentario</h3>
-          <input
-            value={comentario}
-            onChange={onChange}
-            name="escribir-comentario"
-            id="escribir-comentario"
-          ></input>
-          <h3>Nombre</h3>
-          <input
-            value={nombre}
-            onChange={onChangeNombre}
-            name="nombre"
-            id="nombre"
-          ></input>
-          <h3>Apellido</h3>
-          <input
-            value={apellido}
-            onChange={onChangeApellido}
-            name="apellido"
-            id="apellido"
-          ></input>
-          <h3>Email</h3>
-          <input
-            value={email}
-            onChange={onChangeEmail}
-            name="email"
-            id="email"
-          ></input>
-          <input type="submit" value="comentar"></input>
-        </form>
+  return data?.length > numero ? (
+    <div className="comentario">
+      <img
+        className="fondo-comentario papel 1.png"
+        widht={500}
+        height={300}
+        src={
+          choice === 1
+            ? "/assets/imagen/papel 1.png"
+            : choice === 2
+            ? "/assets/imagen/papel 2.png"
+            : choice === 3
+            ? "/assets/imagen/papel 3.png"
+            : choice === 4
+            ? "/assets/imagen/papel 4.png"
+            : null
+        }
+        alt="imagen"
+      />
+      <div className="contenido-comentario">
+        <p className="comentario-texto">{data[numero]?.text}</p>
+        <p className="comentario-autor">
+          {data[numero]?.user.nombre} {data[numero]?.user.apellido}
+        </p>
       </div>
     </div>
-  );
+  ) : null;
 }
