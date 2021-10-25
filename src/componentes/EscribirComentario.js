@@ -47,8 +47,6 @@ export default function EscribirComentario() {
 
   return (
     <div className="escribir-comentario">
-      <p>Comment</p>
-
       <img
         className="escribir-comentario-fondo comentario.png"
         height={800}
