@@ -11,3 +11,32 @@
     font-weight: 400 ;
     font-style: normal;
   }
+
+  .fondo-vista{
+    display:flex;
+    flex-direction: row;
+
+  }
+
+
+  .col-i{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+  
+  .col-d{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+  }
+
+
+  #video-vista4{
+    margin-left: -30px;
+  }
