@@ -4,42 +4,46 @@ import { Link } from "react-router-dom";
 function vista4() {
   return (
     <div
-      class="espejo fondo-vista" 
+      className="espejo fondo-vista" 
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
-      <div class="col-i">
+      <div className="col-i">
 
       <img
-          class="libro2"
+          className="libro2"
           widht={500}
           height={300}
           src="/assets/imagen/libros2.png"
-        />
+          alt="imagen"
+      />
 
         <img
-          class="texto1-07"
+          className="texto1-07"
           widht={413}
           height={403}
           src="/assets/imagen/texto1-07.png"
+          alt="imagen"
         />
 
         <img
-          class="pileta"
+          className="pileta"
           widht={500}
           height={300}
           src="/assets/imagen/pileta.JPG"
+          alt="imagen"
         />
         
       </div>
-      <div class="col-d">
+      <div className="col-d">
 
 
 
       <img
-          class="papel 1"
+          className="papel 1"
           widht={500}
           height={300}
           src="/assets/imagen/papel 1.png"
+          alt="imagen"
         />
 
         <video autoPlay controls width={800} height={600} id="video-vista4">
@@ -47,10 +51,11 @@ function vista4() {
         </video>
 
         <img
-          class="papel 2"
+          className="papel 2"
           widht={500}
           height={300}
           src="/assets/imagen/papel 2.png"
+          alt="imagen"
         />
       </div>
     </div>

@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 function vista2() {
     return (
-        <div class= "espejo" style={{backgroundImage: "url('/assets/imagen/fondo3.jpg')"}}>
+        <div className= "espejo" style={{backgroundImage: "url('/assets/imagen/fondo3.jpg')"}}>
 
 <Link to="/">
-         <img class="despertando" widht={500} height={300} src="/assets/imagen/despertando.png"/>
+         <img className="despertando" widht={500} height={300} src="/assets/imagen/despertando.png"/>
       </Link>
 
 
 
-           <video class="espejito" autoPlay controls width={600} height={500}>
+           <video className="espejito" autoPlay controls width={600} height={500}>
         <source src="/assets/video/espejo.mp4" type="video/mp4" />
       </video>
 

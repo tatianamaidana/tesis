@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function vista3() {
   return (
-    <div class="escalera" style={{backgroundImage: "url('/assets/imagen/fondo2.jpg')"}}>
+    <div className="escalera" style={{backgroundImage: "url('/assets/imagen/fondo2.jpg')"}}>
       <p>   Y aún me atrevo a amar el sonido de la luz en una hora muerta, <br />
       el color del tiempo en un muro abandonado. <br />
       <Link to="/about">
@@ -17,10 +17,10 @@ function vista3() {
       </video>
 
       <Link to="users">
-         <img class="ella" widht={600} height={300} src="/assets/imagen/ella.JPG"/>
+         <img className="ella" widht={600} height={300} src="/assets/imagen/ella.JPG"/>
       </Link>
 
-      <video class="libros" autoPlay controls width={600} height={400}>
+      <video className="libros" autoPlay controls width={600} height={400}>
         <source src="/assets/video/libros.mp4" type="video/mp4" />
       </video>
 
