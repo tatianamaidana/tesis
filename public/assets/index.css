@@ -45,6 +45,7 @@
 .fondo-comentario {
   position: absolute;
   z-index: 1;
+  width: 50%;
 }
 
 .contenido-comentario {

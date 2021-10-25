@@ -1,21 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Comentario from "../componentes/Comentario";
+import EscribirComentario from "../componentes/EscribirComentario";
+import DataProcessor from "../service/DataProcessor";
+import { DataProvider } from "../service/DataProvider";
 
 function vista4() {
+  let path = window.location.pathname;
+  path = path.replace("/", "");
+
   return (
     <div
-      className="espejo fondo-vista" 
+      className="espejo fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
       <div className="col-i">
-
-      <img
+        <img
           className="libro2"
           widht={500}
           height={300}
           src="/assets/imagen/libros2.png"
           alt="imagen"
-      />
+        />
 
         <img
           className="texto1-07"
@@ -32,31 +38,19 @@ function vista4() {
           src="/assets/imagen/pileta.JPG"
           alt="imagen"
         />
-        
       </div>
       <div className="col-d">
+        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
+          <Comentario numero={0} />
 
+          <video autoPlay controls width={800} height={600} id="video-vista4">
+            <source src="/assets/video/espejo.mp4" type="video/mp4" />
+          </video>
 
-
-      <img
-          className="papel 1"
-          widht={500}
-          height={300}
-          src="/assets/imagen/papel 1.png"
-          alt="imagen"
-        />
-
-        <video autoPlay controls width={800} height={600} id="video-vista4">
-          <source src="/assets/video/espejo.mp4" type="video/mp4" />
-        </video>
-
-        <img
-          className="papel 2"
-          widht={500}
-          height={300}
-          src="/assets/imagen/papel 2.png"
-          alt="imagen"
-        />
+          <Comentario numero={1} />
+        </DataProvider>
+        <EscribirComentario />
       </div>
     </div>
   );
