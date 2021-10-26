@@ -112,3 +112,7 @@
   border: none;
   cursor: pointer;
 }
+
+.boton-emocion button{
+  cursor: pointer;
+}
