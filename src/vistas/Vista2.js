@@ -7,7 +7,7 @@ function vista2() {
         <div className= "espejo" style={{backgroundImage: "url('/assets/imagen/fondo3.jpg')"}}>
 
 <Link to="/">
-         <img className="despertando" widht={500} height={300} src="/assets/imagen/despertando.png"/>
+         <img alt="imagen" className="despertando" widht={500} height={300} src="/assets/imagen/despertando.png"/>
       </Link>
 
 
