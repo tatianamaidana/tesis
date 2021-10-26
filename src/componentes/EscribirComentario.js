@@ -9,6 +9,7 @@ export default function EscribirComentario() {
 
     let path = window.location.pathname;
     path = path.replace("/", "");
+    setLoading(true);
 
     apiService(
       "comments/",
@@ -22,7 +23,7 @@ export default function EscribirComentario() {
     });
   };
 
-  const [loading, setLoading] = useState();
+  const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState();
 
   const closePopup = () => {};
@@ -45,7 +46,7 @@ export default function EscribirComentario() {
   const [apellido, setApellido] = useState("");
   const [email, setEmail] = useState("");
 
-  return (
+  return !loading ? (
     <div className="escribir-comentario">
       <img
         className="escribir-comentario-fondo comentario.png"
@@ -120,5 +121,5 @@ export default function EscribirComentario() {
         <h1>Muchas gracias</h1>
       )}
     </div>
-  );
+  ) : null;
 }

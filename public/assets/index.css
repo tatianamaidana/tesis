@@ -56,7 +56,6 @@
   padding: 100px;
 }
 
-
 .comentario-autor {
   align-self: flex-end;
 }
@@ -101,8 +100,7 @@
   border: 1px solid white;
 }
 
-
-.escribir-comentario h3{
+.escribir-comentario h3 {
   margin-bottom: 2px;
   margin-top: 5px;
 }
@@ -113,6 +111,22 @@
   cursor: pointer;
 }
 
-.boton-emocion button{
+.boton-emocion button {
   cursor: pointer;
+}
+
+.popup-inicio-dark {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
 }

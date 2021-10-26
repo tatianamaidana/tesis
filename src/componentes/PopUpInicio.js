@@ -25,7 +25,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
     <div className="boton-emocion">
       <button onClick={click}>
         {emocion === EMOCIONES[0] ? (
-          apretado ? (
+          !apretado ? (
             <img
               alt="imagen"
               height={90}
@@ -35,11 +35,11 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             <img
               alt="imagen"
               height={90}
-              src="/assets/imagen/boton afecto.png"
+              src="/assets/imagen/boton afecto apretado.png"
             />
           )
         ) : emocion === EMOCIONES[1] ? (
-          apretado ? (
+          !apretado ? (
             <img
               alt="imagen"
               height={80}
@@ -49,17 +49,21 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             <img
               alt="imagen"
               height={80}
-              src="/assets/imagen/boton alegría.png"
+              src="/assets/imagen/boton alegria apretado.png"
             />
           )
         ) : emocion === EMOCIONES[2] ? (
-          apretado ? (
+          !apretado ? (
             <img alt="imagen" height={80} src="/assets/imagen/boton amor.png" />
           ) : (
-            <img alt="imagen" height={80} src="/assets/imagen/boton amor.png" />
+            <img
+              alt="imagen"
+              height={80}
+              src="/assets/imagen/boton amor apretado.png"
+            />
           )
         ) : emocion === EMOCIONES[3] ? (
-          apretado ? (
+          !apretado ? (
             <img
               alt="imagen"
               height={80}
@@ -69,11 +73,11 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             <img
               alt="imagen"
               height={80}
-              src="/assets/imagen/boton angustia.png"
+              src="/assets/imagen/boton angustia apretado.png"
             />
           )
         ) : emocion === EMOCIONES[4] ? (
-          apretado ? (
+          !apretado ? (
             <img
               alt="imagen"
               height={80}
@@ -83,11 +87,11 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             <img
               alt="imagen"
               height={80}
-              src="/assets/imagen/boton curiosidad.png"
+              src="/assets/imagen/boton curiosidad apretado.png"
             />
           )
         ) : emocion === EMOCIONES[5] ? (
-          apretado ? (
+          !apretado ? (
             <img
               alt="imagen"
               height={80}
@@ -97,11 +101,11 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             <img
               alt="imagen"
               height={80}
-              src="/assets/imagen/boton melancolia.png"
+              src="/assets/imagen/boton melancolia apretado.png"
             />
           )
         ) : emocion === EMOCIONES[6] ? (
-          apretado ? (
+          !apretado ? (
             <img
               alt="imagen"
               height={80}
@@ -111,11 +115,11 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             <img
               alt="imagen"
               height={80}
-              src="/assets/imagen/boton miedo.png"
+              src="/assets/imagen/boton miedo apretado.png"
             />
           )
         ) : emocion === EMOCIONES[7] ? (
-          apretado ? (
+          !apretado ? (
             <img
               alt="imagen"
               height={80}
@@ -125,7 +129,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             <img
               alt="imagen"
               height={80}
-              src="/assets/imagen/boton tristeza.png"
+              src="/assets/imagen/boton tristeza apretado.png"
             />
           )
         ) : null}
@@ -164,7 +168,7 @@ const InputNombre = ({ nombre, setNombre }) => {
   );
 };
 
-export default function PopUpInicio() {
+export default function PopUpInicio(visible, setVisible) {
   const [emocionesSeleccionadas, setEmocionesSeleccionadas] = useState([]);
 
   const onClickExterno = (emocion, seleccionada) => {
@@ -189,28 +193,31 @@ export default function PopUpInicio() {
 
   const [nombre, setNombre] = useState("");
 
-  return (
-    <div>
-      <InputNombre nombre={nombre} setNombre={setNombre} />
+  return visible ? (
+    <div className="popup-inicio-dark">
+      <div className="popup-inicio">
+        <InputNombre nombre={nombre} setNombre={setNombre} />
 
-      <h1>{nombre}</h1>
-      {emocionesSeleccionadas.map((emocion) => (
-        <h1>{emocion}</h1>
-      ))}
+        <h1>{nombre}</h1>
+        {emocionesSeleccionadas.map((emocion) => (
+          <h1>{emocion}</h1>
+        ))}
 
-      {EMOCIONES.map((emocion) => (
-        <BotonEmocion
-          emocion={emocion}
-          onClickExterno={onClickExterno}
-          seleccionados={emocionesSeleccionadas.length}
+        <div className="popup-inicio-emociones-container">
+          {EMOCIONES.map((emocion) => (
+            <BotonEmocion
+              emocion={emocion}
+              onClickExterno={onClickExterno}
+              seleccionados={emocionesSeleccionadas.length}
+            />
+          ))}
+        </div>
+
+        <BotonEnviar
+          onClick={enviar}
+          enabled={emocionesSeleccionadas.length === 2 && nombre}
         />
-      ))}
-
-{}
-      <BotonEnviar
-        onClick={enviar}
-        enabled={emocionesSeleccionadas.length === 2 && nombre}
-      />
+      </div>
     </div>
-  );
+  ) : null;
 }
