@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 
 export const EMOCIONES = [
   "afecto",
@@ -140,22 +141,26 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
 
 const BotonEnviar = ({ enabled, onClick }) => {
   return enabled ? (
-    <button disabled={!enabled} onClick={onClick}>
+    <button
+      className="popup-inicio-boton-enviar"
+      disabled={!enabled}
+      onClick={onClick}
+    >
       <img alt="imagen" height={100} src="/assets/imagen/enviar.png" />;
     </button>
   ) : (
-    <h5>Seleccionar 2 emociones y poner el nombre :)</h5>
+    <div style={{ width: "100px", height: "100px" }}></div>
   );
 };
 
 const InputNombre = ({ nombre, setNombre }) => {
   return (
-    <div>
+    <div className="popup-inicio-input-nombre">
       <img
         alt="imagen"
         className="boton nombre.png"
-        widht={100}
-        height={100}
+        width={500}
+        height={80}
         src="/assets/imagen/boton nombre.png"
       />
       <input
@@ -183,11 +188,13 @@ export default function PopUpInicio(visible, setVisible) {
     }
   };
 
+  const history = useHistory();
   const enviar = () => {
     if (emocionesSeleccionadas.length === 2 && nombre) {
       localStorage.setItem("tesis-tati-nombre", nombre);
       localStorage.setItem("tesis-tati-emocion-1", emocionesSeleccionadas[0]);
       localStorage.setItem("tesis-tati-emocion-2", emocionesSeleccionadas[1]);
+      history.push("/");
     }
   };
 
@@ -195,17 +202,18 @@ export default function PopUpInicio(visible, setVisible) {
 
   return visible ? (
     <div className="popup-inicio-dark">
-      <div className="popup-inicio">
+      <div
+        className="popup-inicio"
+        style={{
+          backgroundImage: "url('/assets/imagen/pop up_Mesa de trabajo 1.png')",
+        }}
+      >
         <InputNombre nombre={nombre} setNombre={setNombre} />
-
-        <h1>{nombre}</h1>
-        {emocionesSeleccionadas.map((emocion) => (
-          <h1>{emocion}</h1>
-        ))}
 
         <div className="popup-inicio-emociones-container">
           {EMOCIONES.map((emocion) => (
             <BotonEmocion
+              key={emocion}
               emocion={emocion}
               onClickExterno={onClickExterno}
               seleccionados={emocionesSeleccionadas.length}

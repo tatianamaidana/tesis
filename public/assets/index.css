@@ -130,3 +130,66 @@
   height: 100vh;
   z-index: 100;
 }
+
+.popup-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.popup-inicio-emociones-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 190px;
+}
+
+.boton-emocion  {
+  margin-right: 50px;
+}
+
+.boton-emocion button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-inicio-input-nombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+
+.popup-inicio-input-nombre img{
+  position: absolute;
+  z-index: 101;
+}
+
+.popup-inicio-input-nombre input{
+  z-index: 102;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 10px;
+  width: 450px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  text-align: center;
+}
+
+.popup-inicio-boton-enviar {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
