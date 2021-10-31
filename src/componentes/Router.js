@@ -6,6 +6,17 @@ import Escalera from "../vistas/Vista3";
 import Home from "../vistas/Home";
 import PruebaComentarios from "../vistas/PruebaComentarios";
 import Vista4 from "../vistas/Vista4";
+import Vista5 from "../vistas/Vista5";
+import Vista6 from "../vistas/Vista6";
+import Vista7 from "../vistas/Vista7";
+import Vista8 from "../vistas/Vista8";
+import Vista9 from "../vistas/Vista9";
+import Vista10 from "../vistas/Vista10";
+import Vista11 from "../vistas/Vista11";
+import Vista12 from "../vistas/Vista12";
+import Vista13 from "../vistas/Vista13";
+import Vista14 from "../vistas/Vista14";
+import Vista15 from "../vistas/Vista15";
 
 export default function App() {
   return (
