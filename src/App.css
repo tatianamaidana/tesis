@@ -1,66 +1,244 @@
+.fondo-vista {
+  display: flex;
+  flex-direction: row;
+}
 
+.col-i {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.col-d {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#video-vista4 {
+  margin-left: -30px;
+}
+
+.comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.fondo-comentario {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+}
+
+.contenido-comentario {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  color: #888;
+  padding: 100px;
+}
+
+.comentario-autor {
+  align-self: flex-end;
+}
+
+.escribir-comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.escribir-comentario-fondo {
+  position: absolute;
+  z-index: 1;
+  margin-left: -200px;
+}
+
+.escribir-comentario-contenido {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  color: #888;
+  padding: 100px;
+}
+
+.escribir-comentario-nombre-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#escribir-comentario-textarea {
+  background-color: transparent;
+  color: #000;
+  margin-top: 220px;
+  width: 60%;
+  font-size: 1.5rem;
+}
+
+.escribir-comentario input {
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.escribir-comentario h3 {
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+
+.escribir-comentario-botones button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-emocion button {
+  cursor: pointer;
+}
+
+.popup-inicio-dark {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.popup-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.popup-inicio-emociones-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 190px;
+}
+
+.boton-emocion {
+  margin-right: 50px;
+}
+
+.boton-emocion button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-inicio-input-nombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+
+.popup-inicio-input-nombre img {
+  position: absolute;
+  z-index: 101;
+}
+
+.popup-inicio-input-nombre input {
+  z-index: 102;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 10px;
+  width: 450px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  text-align: center;
+}
+
+.popup-inicio-boton-enviar {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .fullscreen-video {
   width: 100vw;
   height: 100vh;
 }
 
-.inicio{
+.inicio {
   font-weight: bold;
-  font-size:  25px;
+  font-size: 25px;
   font-family: "Times New Normal";
   color: white;
   text-align: center;
   padding: 150px;
 }
 
-.escalera{
+.escalera {
   background-color: cornflowerblue;
   padding: 150px;
 }
 
-.espejo{
-background: grey;
-padding: 150px;
+.espejo {
+  background: grey;
+  padding: 150px;
 }
 
-.molino{
+.molino {
   background: gray;
   padding: 150px;
 }
 
-.escaleraf{
+.escaleraf {
   padding: 50px;
   align-items: flex-end;
-
 }
 
-.escalera p{
+.escalera p {
   font: bolder 25px serif;
   font-family: "typewcond";
   text-align: right;
-
 }
 
-.libro{
+.libro {
   padding: 50px;
   align-items: baseline;
 }
 
-.libros{
-  display: block;
-margin-left: auto;
-}
-
-.espejito{
+.libros {
   display: block;
   margin-left: auto;
 }
 
-.atardecer{
-padding-left: 100px;
+.espejito {
+  display: block;
+  margin-left: auto;
 }
 
-ella{
+.atardecer {
+  padding-left: 100px;
+}
+
+ella {
   padding-top: 40px;
 }
