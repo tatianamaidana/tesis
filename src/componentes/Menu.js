@@ -9,21 +9,21 @@ function Menu() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">Vista1</Link>
+            <Link to="/consuelo">Vista1</Link>
           </li>
           <li>
-            <Link to="/users">Vista2</Link>
+            <Link to="/sombra">Vista2</Link>
           </li>
           <li>
             <Link to="/Escalera">Escalera</Link>
           </li>
 
-          <Link to="/users">
+          <Link to="/sombra">
           <button className="boton2">
               Ir a vista 2
           </button>
 
-          <Link to="/about">
+          <Link to="/consuelo">
             ajbscakbckasbcksaba
           </Link>
       </Link> 

@@ -17,7 +17,7 @@ function vista3() {
       <p>
         Y aún me atrevo a amar el sonido de la luz en una hora muerta, <br />
         el color del tiempo en un muro abandonado. <br />
-        <Link to="/about">En mi mirada lo he perdido todo.</Link>
+        <Link to="/consuelo">En mi mirada lo he perdido todo.</Link>
         <br /> Es tan lejos pedir. Tan cerca saber que no hay.
       </p>
 

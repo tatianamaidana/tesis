@@ -23,63 +23,63 @@ export default function App() {
     <Router>
       <div>
         <Switch>
-          <Route path="/about">
+          <Route path="/consuelo">
             <Vista1 />
           </Route>
 
-          <Route path="/users">
+          <Route path="/sombra">
             <Vista2 />
           </Route>
 
-          <Route path="/vista3">
+          <Route path="/miradas">
             <Escalera />
           </Route>
 
-          <Route path="/vista4">
+          <Route path="/calido">
             <Vista4 />
           </Route>
 
-          <Route path="/vista5">
+          <Route path="/necesidad">
             <Vista5 />
           </Route>
 
-          <Route path="/vista6">
+          <Route path="/condena">
             <Vista6 />
           </Route>
 
-          <Route path="/vista7">
+          <Route path="/retazos">
             <Vista7 />
           </Route>
 
-          <Route path="/vista8">
+          <Route path="/compartir">
             <Vista8 />
           </Route>
 
-          <Route path="/vista9">
+          <Route path="/poesia">
             <Vista9 />
           </Route>
 
-          <Route path="/vista10">
+          <Route path="/respirar">
             <Vista10 />
           </Route>
 
-          <Route path="/vista11">
+          <Route path="/herida">
             <Vista11 />
           </Route>
 
-          <Route path="/vista12">
+          <Route path="/pesadilla">
             <Vista12 />
           </Route>
 
-          <Route path="/vista13">
+          <Route path="/telarana">
             <Vista13 />
           </Route>
 
-          <Route path="/vista14">
+          <Route path="/introspectivo">
             <Vista14 />
           </Route>
 
-          <Route path="/vista15">
+          <Route path="/liberar">
             <Vista15 />
           </Route>
 
@@ -91,9 +91,7 @@ export default function App() {
             <Home />
           </Route>
 
-          <Route path="/">
-            <Home />
-          </Route>
+     
         </Switch>
       </div>
     </Router>
