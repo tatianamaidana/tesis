@@ -15,14 +15,14 @@ function vista4() {
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
       <div className="col-i">
-      <Link to="/">
-        <img
-          className="libro2"
-          widht={500}
-          height={300}
-          src="/assets/imagen/libros2.png"
-          alt="imagen"
-        />
+        <Link to="/">
+          <img
+            className="libro2"
+            widht={500}
+            height={300}
+            src="/assets/imagen/libros2.png"
+            alt="imagen"
+          />
         </Link>
 
         <img
