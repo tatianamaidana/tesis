@@ -39,6 +39,50 @@ export default function App() {
             <Vista4 />
           </Route>
 
+          <Route path="/vista5">
+            <Vista5 />
+          </Route>
+
+          <Route path="/vista6">
+            <Vista6 />
+          </Route>
+
+          <Route path="/vista7">
+            <Vista7 />
+          </Route>
+
+          <Route path="/vista8">
+            <Vista8 />
+          </Route>
+
+          <Route path="/vista9">
+            <Vista9 />
+          </Route>
+
+          <Route path="/vista10">
+            <Vista10 />
+          </Route>
+
+          <Route path="/vista11">
+            <Vista11 />
+          </Route>
+
+          <Route path="/vista12">
+            <Vista12 />
+          </Route>
+
+          <Route path="/vista13">
+            <Vista13 />
+          </Route>
+
+          <Route path="/vista14">
+            <Vista14 />
+          </Route>
+
+          <Route path="/vista15">
+            <Vista15 />
+          </Route>
+
           <Route path="/prueba">
             <PruebaComentarios />
           </Route>
