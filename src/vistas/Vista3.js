@@ -22,10 +22,10 @@ function vista3() {
       </p>
 
       <video autoPlay controls width={800} height={600}>
-        <source src="/assets/video/escalera1.mp4" type="video/mp4" />
+        <source src="/assets/video/Escena 3.mp4" type="video/mp4" />
       </video>
 
-      <Link to="users">
+      <Link to="calido">
         <img
           alt="imagen"
           className="ella"

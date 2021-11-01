@@ -15,7 +15,7 @@ function vista4() {
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
       <div className="col-i">
-        <Link to="/">
+        <Link to="necesidad">
           <img
             className="libro2"
             widht={500}
@@ -47,7 +47,7 @@ function vista4() {
           <Comentario numero={0} />
 
           <video autoPlay controls width={800} height={600} id="video-vista4">
-            <source src="/assets/video/espejo.mp4" type="video/mp4" />
+            <source src="/assets/video/Escena 4.mp4" type="video/mp4" />
           </video>
 
           <Comentario numero={1} />

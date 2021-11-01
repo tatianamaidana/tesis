@@ -16,7 +16,7 @@ function Home() {
         <source src="/assets/video/inicio.mp4" />
       </video>
 
-      <Link to="vista3">
+      <Link to="consuelo">
         <img
           alt="imagen"
           className="escaleraf"
@@ -28,7 +28,7 @@ function Home() {
         <source src="/assets/video/cielo.mp4" type="video/mp4" />
       </video>
 
-      <Link to="vista4">
+      <Link to="calido">
         <img alt="imagen" className="libro" src="/assets/imagen/libros2.png" />
       </Link>
     </div>

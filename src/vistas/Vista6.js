@@ -8,10 +8,10 @@ function vista6() {
       style={{ backgroundImage: "url('/assets/imagen/fondo10.jpg')" }}
     >
       <video autoPlay loop width={600} height={500}>
-        <source src="/assets/video/secuencia 03.mp4" type="video/mp4" />
+        <source src="/assets/video/Escena 6.mp4" type="video/mp4" />
       </video>
 
-      <Link to="/">
+      <Link to="retazos">
         <img
           alt="imagen"
           className="atardecer"
