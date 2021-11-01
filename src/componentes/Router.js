@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Vista1 from "../vistas/Vista1";
 import Vista2 from "../vistas/Vista2";
@@ -17,8 +17,35 @@ import Vista12 from "../vistas/Vista12";
 import Vista13 from "../vistas/Vista13";
 import Vista14 from "../vistas/Vista14";
 import Vista15 from "../vistas/Vista15";
+import EscribirComentario from "./EscribirComentario";
+import UrlTracker from "./UrlTracker";
 
 export default function App() {
+  const [commentsVisible, setCommentsVisible] = useState(false);
+
+  const [commentsEnabled, setCommentsEnabled] = useState(false);
+  const [h, setH] = useState([]);
+
+  const closeComments = () => {
+    setCommentsVisible(false);
+  };
+
+  const openComments = () => {
+    if (commentsEnabled) {
+      setCommentsVisible(true);
+    }
+  };
+
+  const enableComments = () => {
+    setTimeout(() => {
+      setCommentsEnabled(true);
+    }, 1000);
+  };
+
+  useEffect(() => {
+    console.log(h);
+  }, [h]);
+
   return (
     <Router>
       <div>
@@ -88,11 +115,16 @@ export default function App() {
           </Route>
 
           <Route path="/">
-            <Home />
+            <Home enableComments={enableComments} />
           </Route>
-
-     
         </Switch>
+        <UrlTracker h={h} setH={setH} open={openComments} />
+        <EscribirComentario
+          h={h}
+          enabled={commentsEnabled}
+          visible={commentsVisible}
+          close={closeComments}
+        />
       </div>
     </Router>
   );

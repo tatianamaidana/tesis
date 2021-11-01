@@ -1,13 +1,13 @@
 import React from "react";
 import PopUpInicio from "../componentes/PopUpInicio";
 
-function Home() {
+function Home({ enableComments }) {
   return (
     <div
       className="inicio"
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
-      <PopUpInicio />
+      <PopUpInicio visible={true} enableComments={enableComments} />
     </div>
   );
 }

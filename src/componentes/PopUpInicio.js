@@ -155,6 +155,13 @@ const BotonEnviar = ({ enabled, onClick }) => {
 const InputNombre = ({ nombre, setNombre }) => {
   return (
     <div className="popup-inicio-input-nombre">
+      {/* <img
+        alt="imagen"
+        className="boton nombre.png"
+        width={500}
+        height={80}
+        src="/assets/imagen/boton nombre.png"
+      /> */}
       <input
         value={nombre}
         onChange={(e) => {
@@ -165,7 +172,7 @@ const InputNombre = ({ nombre, setNombre }) => {
   );
 };
 
-export default function PopUpInicio(visible, setVisible) {
+export default function PopUpInicio({visible, setVisible, enableComments}) {
   const [emocionesSeleccionadas, setEmocionesSeleccionadas] = useState([]);
 
   const onClickExterno = (emocion, seleccionada) => {
@@ -186,53 +193,54 @@ export default function PopUpInicio(visible, setVisible) {
       localStorage.setItem("tesis-tati-nombre", nombre);
       localStorage.setItem("tesis-tati-emocion-1", emocionesSeleccionadas[0]);
       localStorage.setItem("tesis-tati-emocion-2", emocionesSeleccionadas[1]);
+      enableComments();
       redirect(emocionesSeleccionadas);
     }
   };
 
   const redirect = (es) => {
     if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[5])) {
-      history.push("/vista13")
+      history.push("/telarana")
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[6])) {
-      history.push("/vista4")
+      history.push("/calido")
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[4])) {
-      history.push("/vista8")
+      history.push("/compartir")
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[3])) {
-      history.push("/vista13")
+      history.push("/telarana")
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[2])) {
-      history.push("/vista9")
+      history.push("/poesia")
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[1])) {
-      history.push("/vista4")
+      history.push("/calido")
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[4])) {
-      history.push("/vista13")
+      history.push("/telarana")
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[3])) {
-      history.push("/vista2")
+      history.push("/sombra")
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[2])) {
-      history.push("/vista12")
+      history.push("/pesadilla")
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[6])) {
-      history.push("/vista11")
+      history.push("/herida")
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[1])) {
-      history.push("/vista14")
+      history.push("/introspectivo")
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[3])) {
-      history.push("/vista8")
+      history.push("/compartir")
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[2])) {
-      history.push("/vista1")
+      history.push("/consuelo")
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[6])) {
-      history.push("/vista2")
+      history.push("/sombra")
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[1])) {
-      history.push("/vista4")
+      history.push("/calido")
     } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[2])) {
-      history.push("/vista3")
+      history.push("/miradas")
     } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[6])) {
-      history.push("/vista15")
+      history.push("/liberar")
     } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[1])) {
-      history.push("/vista8")
+      history.push("/compartir")
     } else if (es.includes(EMOCIONES[2]) && es.includes(EMOCIONES[6])) {
-      history.push("/vista15")
+      history.push("/liberar")
     } else if (es.includes(EMOCIONES[2]) && es.includes(EMOCIONES[1])) {
-      history.push("/vista8")
+      history.push("/compartir")
     } else if (es.includes(EMOCIONES[1]) && es.includes(EMOCIONES[6])) {
-      history.push("/vista6")
+      history.push("/condena")
     }
   };
 
