@@ -19,6 +19,7 @@ function Vista15() {
           <img
             alt="imagen"
             className="atardecer"
+            width={700} height={500}
             src="/assets/imagen/rostro.jpg"
           />
         </Link>

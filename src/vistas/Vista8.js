@@ -36,6 +36,7 @@ function Vista8() {
           <img
             alt="imagen"
             className="atardecer"
+            width={700} height={500}
             src="/assets/imagen/libros2.png"
           />
         </Link>

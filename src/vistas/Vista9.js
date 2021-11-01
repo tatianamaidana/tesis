@@ -27,6 +27,7 @@ function Vista9() {
           <img
             alt="imagen"
             className="atardecer"
+            width={700} height={500}
             src="/assets/imagen/libros3.jpg"
           />
         </Link>

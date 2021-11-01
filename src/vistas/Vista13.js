@@ -30,6 +30,7 @@ function Vista13() {
           <img
             alt="imagen"
             className="atardecer"
+            width={700} height={500}
             src="/assets/imagen/escalera1.png"
           />
         </Link>
