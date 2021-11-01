@@ -26,10 +26,10 @@ function vista4() {
         </Link>
 
         <img
-          className="texto1-07"
+          className="texto4"
           widht={413}
           height={403}
-          src="/assets/imagen/texto1-07.png"
+          src="/assets/imagen/texto4.png"
           alt="imagen"
         />
 

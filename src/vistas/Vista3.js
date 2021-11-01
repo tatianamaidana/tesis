@@ -11,42 +11,46 @@ function vista3() {
 
   return (
     <div
-      className="escalera"
+      className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo2.jpg')" }}
     >
-      <p>
-        Y aún me atrevo a amar el sonido de la luz en una hora muerta, <br />
-        el color del tiempo en un muro abandonado. <br />
-        <Link to="/consuelo">En mi mirada lo he perdido todo.</Link>
-        <br /> Es tan lejos pedir. Tan cerca saber que no hay.
-      </p>
+      <div className="col-i">
+        <p>
+          Y aún me atrevo a amar el sonido de la luz en una hora muerta, <br />
+          el color del tiempo en un muro abandonado. <br />
+          <Link to="/consuelo">En mi mirada lo he perdido todo.</Link>
+          <br /> Es tan lejos pedir. Tan cerca saber que no hay.
+        </p>
 
-      <video autoPlay controls width={800} height={600}>
-        <source src="/assets/video/Escena 3.mp4" type="video/mp4" />
-      </video>
+        <video autoPlay controls width={800} height={600}>
+          <source src="/assets/video/Escena 3.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-      <Link to="calido">
-        <img
-          alt="imagen"
-          className="ella"
-          widht={600}
-          height={300}
-          src="/assets/imagen/ella.JPG"
-        />
-      </Link>
+      <div className="col-d">
+        <Link to="calido">
+          <img
+            alt="imagen"
+            className="ella"
+            widht={600}
+            height={300}
+            src="/assets/imagen/ella.JPG"
+          />
+        </Link>
 
-      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-        <DataProcessor />
-        <Comentario numero={0} />
-        <Comentario numero={1} />
-        <Comentario numero={2} />
-      </DataProvider>
+        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
+          <Comentario numero={0} />
+          <Comentario numero={1} />
+          <Comentario numero={2} />
+        </DataProvider>
 
-      <EscribirComentario />
+        <EscribirComentario />
 
-      <video className="libros" autoPlay controls width={600} height={400}>
-        <source src="/assets/video/libros.mp4" type="video/mp4" />
-      </video>
+        <video className="libros" autoPlay controls width={600} height={400}>
+          <source src="/assets/video/libros.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   );
 }
