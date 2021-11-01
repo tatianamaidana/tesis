@@ -30,7 +30,7 @@ function Vista13() {
           <img
             alt="imagen"
             className="atardecer"
-            src="/assets/imagen/atardecer1.png"
+            src="/assets/imagen/escalera1.png"
           />
         </Link>
       </div>

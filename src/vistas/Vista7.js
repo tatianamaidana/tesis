@@ -27,7 +27,7 @@ function Vista7() {
           <Comentario numero={1} />
         </DataProvider>
 
-        
+
         <video autoPlay loop width={600} height={500}>
           <source src="/assets/video/Escena 7.mp4" type="video/mp4" />
         </video>
@@ -36,7 +36,7 @@ function Vista7() {
           <img
             alt="imagen"
             className="atardecer"
-            src="/assets/imagen/atardecer1.png"
+            src="/assets/imagen/terraza.jpg"
           />
         </Link>
       </div>

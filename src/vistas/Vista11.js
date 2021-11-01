@@ -30,7 +30,7 @@ function Vista11() {
           <img
             alt="imagen"
             className="atardecer"
-            src="/assets/imagen/atardecer1.png"
+            src="/assets/imagen/oscuro.jpg"
           />
         </Link>
 

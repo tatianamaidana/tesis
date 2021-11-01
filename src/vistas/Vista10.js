@@ -23,10 +23,10 @@ function Vista10() {
           <img
             alt="imagen"
             className="atardecer"
-            src="/assets/imagen/atardecer1.png"
+            src="/assets/imagen/fumando.jpg"
           />
         </Link>
-        
+
         <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
           <Comentario numero={0} />

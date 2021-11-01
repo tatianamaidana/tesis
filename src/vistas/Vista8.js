@@ -36,7 +36,7 @@ function Vista8() {
           <img
             alt="imagen"
             className="atardecer"
-            src="/assets/imagen/atardecer1.png"
+            src="/assets/imagen/libros2.png"
           />
         </Link>
       </div>

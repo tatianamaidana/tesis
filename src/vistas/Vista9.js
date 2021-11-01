@@ -27,7 +27,7 @@ function Vista9() {
           <img
             alt="imagen"
             className="atardecer"
-            src="/assets/imagen/atardecer1.png"
+            src="/assets/imagen/libros3.jpg"
           />
         </Link>
       </div>
