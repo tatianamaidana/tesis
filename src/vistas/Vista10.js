@@ -21,6 +21,12 @@ function vista10() {
             src="/assets/imagen/atardecer1.png"
           />
         </Link>
+
+        <img
+            alt="imagen"
+            className="atardecer"
+            src="/assets/imagen/texto10.png"
+          />
       </div>
     </div>
   );

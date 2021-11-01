@@ -10,10 +10,16 @@ function vista12() {
       <div className="col-i">
         <video autoPlay loop width={600} height={500}>
           <source
-            src="/assets/video/Extra luna noche campo.mp4"
+            src="/assets/video/vhs molino.mp4"
             type="video/mp4"
           />
         </video>
+
+        <img
+            alt="imagen"
+            className="atardecer"
+            src="/assets/imagen/texto12.png"
+          />
       </div>
 
       <div className="col-d">
@@ -24,6 +30,18 @@ function vista12() {
             src="/assets/imagen/atardecer1.png"
           />
         </Link>
+
+        <video autoPlay loop width={600} height={500}>
+          <source
+            src="/assets/video/nieve.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <img
+            alt="imagen"
+            className="atardecer"
+            src="/assets/imagen/texto12a.png"
+          />
       </div>
     </div>
   );

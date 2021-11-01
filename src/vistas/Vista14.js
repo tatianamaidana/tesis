@@ -21,7 +21,12 @@ function vista14() {
             src="/assets/imagen/atardecer1.png"
           />
         </Link>
+
+        <video autoPlay loop width={600} height={500}>
+          <source src="/assets/video/extra pajaros.mp4" type="video/mp4" />
+        </video>
       </div>
+      
     </div>
   );
 }

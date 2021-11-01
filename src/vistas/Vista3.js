@@ -34,7 +34,7 @@ function vista3() {
             className="ella"
             widht={600}
             height={300}
-            src="/assets/imagen/ella.JPG"
+            src="/assets/imagen/artemis.jpg"
           />
         </Link>
 

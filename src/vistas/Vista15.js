@@ -8,12 +8,6 @@ function vista15() {
       style={{ backgroundImage: "url('/assets/imagen/fondo5.jpg')" }}
     >
       <div className="col-i">
-        <video autoPlay loop width={600} height={500}>
-          <source src="/assets/video/Escena 15.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div className="col-d">
         <Link to="consuelo">
           <img
             alt="imagen"
@@ -21,6 +15,18 @@ function vista15() {
             src="/assets/imagen/atardecer1.png"
           />
         </Link>
+      </div>
+
+      <div className="col-d">
+        <video autoPlay loop width={600} height={500}>
+          <source src="/assets/video/Escena 15.mp4" type="video/mp4" />
+        </video>
+
+        <img
+          alt="imagen"
+          className="atardecer"
+          src="/assets/imagen/texto15.png"
+        />
       </div>
     </div>
   );

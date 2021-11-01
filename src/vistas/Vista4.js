@@ -20,7 +20,7 @@ function vista4() {
             className="libro2"
             widht={500}
             height={300}
-            src="/assets/imagen/libros2.png"
+            src="/assets/imagen/fumando1.jpg"
             alt="imagen"
           />
         </Link>
@@ -29,7 +29,7 @@ function vista4() {
           className="texto4"
           widht={413}
           height={403}
-          src="/assets/imagen/texto4.png"
+          src="/assets/imagen/texto1-07.png"
           alt="imagen"
         />
 

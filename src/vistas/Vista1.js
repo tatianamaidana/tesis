@@ -12,7 +12,6 @@ function vista1() {
           <source src="/assets/video/Escena 1.mp4" type="video/mp4" />
         </video>
 
-
         <img
           className="texto1"
           widht={453}
@@ -20,7 +19,6 @@ function vista1() {
           src="/assets/imagen/texto1.png"
           alt="imagen"
         />
-
       </div>
 
       <div className="col-d">
@@ -28,14 +26,19 @@ function vista1() {
           <img
             alt="imagen"
             className="atardecer"
-            src="/assets/imagen/atardecer1.png"
+            src="/assets/imagen/despertando.png"
           />
         </Link>
 
         <Link to="calido">
-        <img alt="imagen" className="libro" src="/assets/imagen/libros2.png" />
-      </Link>
-
+          <img
+            alt="imagen"
+            className="libro"
+            widht={600}
+            height={400}
+            src="/assets/imagen/artemis.jpg"
+          />
+        </Link>
       </div>
     </div>
   );
