@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Comentario from "../componentes/Comentario";
+import DataProcessor from "../service/DataProcessor";
+import { DataProvider } from "../service/DataProvider";
 
 function Vista12() {
+    let path = window.location.pathname;
+    path = path.replace("/", "");
+
   return (
     <div
       className="fondo-vista"
@@ -23,6 +29,11 @@ function Vista12() {
       </div>
 
       <div className="col-d">
+
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
+          <Comentario numero={0} />
+        
         <Link to="telarana">
           <img
             alt="imagen"
@@ -30,6 +41,8 @@ function Vista12() {
             src="/assets/imagen/atardecer1.png"
           />
         </Link>
+        <Comentario numero={1} />
+       
 
         <video autoPlay loop width={600} height={500}>
           <source
@@ -37,6 +50,9 @@ function Vista12() {
             type="video/mp4"
           />
         </video>
+
+        <Comentario numero={2} />
+        </DataProvider> 
         <img
             alt="imagen"
             className="atardecer"

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
-import EscribirComentario from "../componentes/EscribirComentario";
 import DataProcessor from "../service/DataProcessor";
 import { DataProvider } from "../service/DataProvider";
 
@@ -45,7 +44,6 @@ function Vista3() {
           <Comentario numero={2} />
         </DataProvider>
 
-        <EscribirComentario />
 
         <video className="libros" autoPlay controls width={600} height={400}>
           <source src="/assets/video/libros.mp4" type="video/mp4" />

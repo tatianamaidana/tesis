@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Comentario from "../componentes/Comentario";
+import DataProcessor from "../service/DataProcessor";
+import { DataProvider } from "../service/DataProvider";
 
 function Vista1() {
+  let path = window.location.pathname;
+  path = path.replace("/", "");
+
   return (
     <div
       className="fondo-vista"
@@ -22,6 +28,12 @@ function Vista1() {
       </div>
 
       <div className="col-d">
+
+        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
+          <Comentario numero={0} />
+        
+
         <Link to="sombra">
           <img
             alt="imagen"
@@ -29,6 +41,9 @@ function Vista1() {
             src="/assets/imagen/despertando.png"
           />
         </Link>
+
+        <Comentario numero={1} />
+       
 
         <Link to="calido">
           <img
@@ -39,6 +54,10 @@ function Vista1() {
             src="/assets/imagen/artemis.jpg"
           />
         </Link>
+
+        <Comentario numero={2} />
+        </DataProvider>
+
       </div>
     </div>
   );
