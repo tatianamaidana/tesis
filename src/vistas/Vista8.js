@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function vista8() {
+function Vista8() {
   return (
     <div
       className="molino"
@@ -26,4 +26,4 @@ function vista8() {
   );
 }
 
-export default vista8;
+export default Vista8;

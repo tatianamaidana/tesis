@@ -5,7 +5,7 @@ import EscribirComentario from "../componentes/EscribirComentario";
 import DataProcessor from "../service/DataProcessor";
 import { DataProvider } from "../service/DataProvider";
 
-function vista3() {
+function Vista3() {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -55,4 +55,4 @@ function vista3() {
   );
 }
 
-export default vista3;
+export default Vista3;
