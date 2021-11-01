@@ -22,4 +22,4 @@ function vista15() {
   );
 }
 
-export default vista1s5;
+export default vista15;
