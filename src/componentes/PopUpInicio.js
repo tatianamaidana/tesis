@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { useHistory } from "react-router";
 
 export const EMOCIONES = [
-  "afecto",
-  "alegría",
-  "amor",
-  "angustia",
-  "curiosidad",
-  "melancolía",
-  "miedo",
-  "tristeza",
+  "afecto", // 0
+  "alegría", // 1
+  "angustia", // 2
+  "curiosidad", // 3
+  "melancolía", // 4
+  "miedo", // 5
+  "tristeza", // 6
 ];
 
 const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
@@ -194,7 +193,53 @@ export default function PopUpInicio(visible, setVisible) {
       localStorage.setItem("tesis-tati-nombre", nombre);
       localStorage.setItem("tesis-tati-emocion-1", emocionesSeleccionadas[0]);
       localStorage.setItem("tesis-tati-emocion-2", emocionesSeleccionadas[1]);
-      history.push("/");
+      redirect(emocionesSeleccionadas);
+    }
+  };
+
+  const redirect = (es) => {
+    if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[5])) {
+      history.push("/vista13")
+    } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[6])) {
+      history.push("/vista4")
+    } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[4])) {
+      history.push("/vista8")
+    } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[3])) {
+      history.push("/vista13")
+    } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[2])) {
+      history.push("/vista9")
+    } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[1])) {
+      history.push("/vista4")
+    } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[4])) {
+      history.push("/vista13")
+    } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[3])) {
+      history.push("/vista2")
+    } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[2])) {
+      history.push("/vista12")
+    } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[6])) {
+      history.push("/vista11")
+    } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[1])) {
+      history.push("/vista14")
+    } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[3])) {
+      history.push("/vista8")
+    } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[2])) {
+      history.push("/vista1")
+    } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[6])) {
+      history.push("/vista2")
+    } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[1])) {
+      history.push("/vista4")
+    } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[2])) {
+      history.push("/vista3")
+    } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[6])) {
+      history.push("/vista15")
+    } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[1])) {
+      history.push("/vista8")
+    } else if (es.includes(EMOCIONES[2]) && es.includes(EMOCIONES[6])) {
+      history.push("/vista15")
+    } else if (es.includes(EMOCIONES[2]) && es.includes(EMOCIONES[1])) {
+      history.push("/vista8")
+    } else if (es.includes(EMOCIONES[1]) && es.includes(EMOCIONES[6])) {
+      history.push("/vista6")
     }
   };
 
