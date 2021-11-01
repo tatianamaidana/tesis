@@ -20,7 +20,9 @@ function PruebaComentarios() {
     >
       <DataProvider endpoint={`random-comments-by-path/${path}/`}>
         <DataProcessor />
-        <Comentario />
+        <Comentario numero={0} />
+        <Comentario numero={1} />
+        <Comentario numero={2} />
         <EscribirComentario />
       </DataProvider>
 

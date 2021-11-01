@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function vista1() {
+function Vista1() {
   return (
     <div
       className="fondo-vista"
@@ -44,4 +44,4 @@ function vista1() {
   );
 }
 
-export default vista1;
+export default Vista1;
