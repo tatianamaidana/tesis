@@ -10,11 +10,11 @@ function Vista8() {
 
   return (
     <div
-      className="molino"
+      className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo20.jpg')" }}
     >
       <div className="col-i">
-        <video autoPlay loop width={600} height={500}>
+        <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 8.mp4" type="video/mp4" />
         </video>
 
@@ -27,11 +27,26 @@ function Vista8() {
         <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
           <Comentario numero={0} />
+
+          <Link to="consuelo">
+          <img
+            alt="imagen"
+            className="atardecer"
+            
+            src="/assets/imagen/caminando.png"
+          />
+        </Link>
           <Comentario numero={1} />
         </DataProvider>
       </div>
 
       <div className="col-d">
+      <img
+          alt="imagen"
+          className="texto3a"
+          src="/assets/imagen/poesia8.png"
+        />
+
         <Link to="poesia">
           <img
             alt="imagen"
@@ -40,6 +55,10 @@ function Vista8() {
             src="/assets/imagen/libros2.png"
           />
         </Link>
+
+        <video className= "gato1" autoPlay loop muted width={550} height={350}>
+          <source src="/assets/video/Botella.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   );

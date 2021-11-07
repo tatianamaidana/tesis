@@ -11,29 +11,41 @@ function Vista3() {
   return (
     <div
       className="fondo-vista"
-      style={{ backgroundImage: "url('/assets/imagen/fondo2.jpg')" }}
+      style={{ backgroundImage: "url('/assets/imagen/fondo21.jpg')" }}
     >
       <div className="col-i">
-        <p>
-          Y aún me atrevo a amar el sonido de la luz en una hora muerta, <br />
-          el color del tiempo en un muro abandonado. <br />
-          <Link to="/consuelo">En mi mirada lo he perdido todo.</Link>
-          <br /> Es tan lejos pedir. Tan cerca saber que no hay.
-        </p>
+        
 
         <video autoPlay controls width={800} height={600}>
           <source src="/assets/video/Escena 3.mp4" type="video/mp4" />
         </video>
+
+        <img
+            alt="imagen"
+            className="poesia3"
+           
+            src="/assets/imagen/poesia3.png"
+          />
+
+<Link to="pesadilla">
+          <img
+            alt="imagen"
+            className="ella"
+            widht={700}
+            height={500}
+            src="/assets/imagen/persona mar.png"
+          />
+        </Link>
       </div>
 
       <div className="col-d">
         <Link to="calido">
           <img
-            alt="imagen"
+            alt="artemis"
             className="ella"
-            widht={600}
-            height={300}
-            src="/assets/imagen/artemis.jpg"
+            widht={700}
+            height={500}
+            src="/assets/imagen/artemis1.png"
           />
         </Link>
 
@@ -41,13 +53,15 @@ function Vista3() {
           <DataProcessor />
           <Comentario numero={0} />
           <Comentario numero={1} />
-          <Comentario numero={2} />
-        </DataProvider>
+         
 
 
-        <video className="libros" autoPlay controls width={600} height={400}>
-          <source src="/assets/video/libros.mp4" type="video/mp4" />
+        <video className="vhsvacas" autoPlay muted loop width={600} height={400}>
+          <source src="/assets/video/vhs vacas.mp4" type="video/mp4" />
         </video>
+
+        <Comentario numero={2} />
+        </DataProvider>
       </div>
     </div>
   );

@@ -15,32 +15,48 @@ function Vista7() {
       <div className="col-i">
         <img
           alt="imagen"
-          className="atardecer"
-          src="/assets/imagen/texto7.png"
+          className="poesia7"
+          src="/assets/imagen/poesia7-.png"
         />
-      </div>
-
-      <div className="col-d">
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
-          <Comentario numero={1} />
-        </DataProvider>
-
-
-        <video autoPlay loop width={600} height={500}>
-          <source src="/assets/video/Escena 7.mp4" type="video/mp4" />
-        </video>
 
         <Link to="compartir">
           <img
             alt="imagen"
             className="atardecer"
-            width={700} height={500}
+            width={750} height={500}
 
             src="/assets/imagen/terraza.jpg"
           />
         </Link>
+
+        <video autoPlay loop muted width={800} height={600}>
+          <source src="/assets/video/Extra gato arbol.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div className="col-d">
+
+      <video className= "roto" autoPlay loop width={900} height={700}>
+          <source src="/assets/video/Escena 7.mp4" type="video/mp4" />
+        </video>
+
+
+        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
+          <Comentario numero={0} />
+
+          <Link to="introspectivo">
+          <img
+          alt="imagen"
+          className="atardecer"
+          src="/assets/imagen/texto7.png"
+        /> 
+        </Link>
+          <Comentario numero={1} />
+        </DataProvider>
+
+
+      
       </div>
     </div>
   );

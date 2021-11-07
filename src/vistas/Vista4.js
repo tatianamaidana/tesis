@@ -10,44 +10,56 @@ function Vista4() {
 
   return (
     <div
-      className="espejo fondo-vista"
+      className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
       <div className="col-i">
         <Link to="necesidad">
           <img
             className="libro2"
-            widht={500}
-            height={300}
-            src="/assets/imagen/fumando1.jpg"
+            widht={700}
+            height={500}
+            src="/assets/imagen/cafe.png"
             alt="imagen"
           />
         </Link>
 
         <img
-          className="texto4"
-          widht={413}
-          height={403}
-          src="/assets/imagen/texto1-07.png"
+          className="poesia3"
+       
+          src="/assets/imagen/poesia4.png"
           alt="imagen"
         />
-
+<Link to="compartir">
         <img
           className="pileta"
-          widht={500}
-          height={300}
-          src="/assets/imagen/pileta.JPG"
+          widht={700}
+          height={500}
+          src="/assets/imagen/rostro.jpg"
           alt="imagen"
         />
+        </Link>
+
+<video className="libros" autoPlay muted loop width={600} height={400}>
+          <source src="/assets/video/Pájaros en el río.mp4" type="video/mp4" />
+        </video>
       </div>
       <div className="col-d">
         <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
           <Comentario numero={0} />
 
-          <video autoPlay controls width={800} height={600} id="video-vista4">
+          <video autoPlay controls width={900} height={700} id="video-vista4">
             <source src="/assets/video/Escena 4.mp4" type="video/mp4" />
           </video>
+
+          <img
+          className="texto3a"
+          widht={413}
+          height={403}
+          src="/assets/imagen/texto1-07.png"
+          alt="imagen"
+        />
 
           <Comentario numero={1} />
         </DataProvider>

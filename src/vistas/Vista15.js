@@ -5,9 +5,8 @@ import DataProcessor from "../service/DataProcessor";
 import { DataProvider } from "../service/DataProvider";
 
 function Vista15() {
-    let path = window.location.pathname;
-    path = path.replace("/", "");
-
+  let path = window.location.pathname;
+  path = path.replace("/", "");
 
   return (
     <div
@@ -19,10 +18,21 @@ function Vista15() {
           <img
             alt="imagen"
             className="atardecer"
-            width={700} height={500}
-            src="/assets/imagen/rostro.jpg"
+           
+            src="/assets/imagen/fumando1.png"
           />
         </Link>
+
+
+        <img
+            alt="imagen"
+            className="atardecer"
+            src="/assets/imagen/poesia15.png"
+          />
+
+<video autoPlay loop muted width={550} height={350}>
+          <source src="/assets/video/Secuencia 04.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div className="col-d">
@@ -34,12 +44,17 @@ function Vista15() {
           <Comentario numero={0} />
           <Comentario numero={1} />
         </DataProvider>
+
+        <Link to="poesia">
         <img
           alt="imagen"
           className="atardecer"
           src="/assets/imagen/texto15.png"
         />
+        </Link>
       </div>
+
+      
     </div>
   );
 }

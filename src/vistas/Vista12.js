@@ -14,18 +14,27 @@ function Vista12() {
       style={{ backgroundImage: "url('/assets/imagen/fondo6.jpg')" }}
     >
       <div className="col-i">
-        <video autoPlay loop width={600} height={500}>
+        <video autoPlay loop width={900} height={700}>
           <source
-            src="/assets/video/vhs molino.mp4"
+            src="/assets/video/Escena 12.mp4"
             type="video/mp4"
           />
         </video>
 
         <img
             alt="imagen"
-            className="atardecer"
+            className="poesia3"
             src="/assets/imagen/texto12.png"
           />
+ <Link to="condena">
+          <img
+            alt="imagen"
+            className="atardecer"
+           
+            src="/assets/imagen/llamada.png"
+          />
+        </Link>
+
       </div>
 
       <div className="col-d">
@@ -38,16 +47,24 @@ function Vista12() {
           <img
             alt="imagen"
             className="atardecer"
-            width={700} height={500}
+           
             src="/assets/imagen/telarana.jpg"
           />
         </Link>
+
+
+        <img
+            alt="imagen"
+            className="texto3a"
+            src="/assets/imagen/poesia12.png"
+          />
+
         <Comentario numero={1} />
        
 
-        <video autoPlay loop width={600} height={500}>
+        <video autoPlay loop muted width={600} height={500}>
           <source
-            src="/assets/video/nieve.mp4"
+            src="/assets/video/vhs molino.mp4"
             type="video/mp4"
           />
         </video>
@@ -56,7 +73,7 @@ function Vista12() {
         </DataProvider> 
         <img
             alt="imagen"
-            className="atardecer"
+            className="texto3a"
             src="/assets/imagen/texto12a.png"
           />
       </div>

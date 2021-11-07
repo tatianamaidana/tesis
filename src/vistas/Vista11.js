@@ -14,13 +14,20 @@ function Vista11() {
       style={{ backgroundImage: "url('/assets/imagen/fondo13.jpg')" }}
     >
       <div className="col-i">
-        <video autoPlay loop width={600} height={500}>
-          <source src="/assets/video/Escena 11.mp4" type="video/mp4" />
-        </video>
-
         <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
           <Comentario numero={0} />
+
+          <video autoPlay loop width={900} height={700}>
+            <source src="/assets/video/Escena 11.mp4" type="video/mp4" />
+          </video>
+
+          <img
+            alt="imagen"
+            className="poesia3"
+            src="/assets/imagen/poesia11.png"
+          />
+
           <Comentario numero={1} />
         </DataProvider>
       </div>
@@ -29,9 +36,8 @@ function Vista11() {
         <Link to="pesadilla">
           <img
             alt="imagen"
-            className="atardecer"
-            width={700} height={500}
-            src="/assets/imagen/oscuro.jpg"
+            className="vhsvacas"
+            src="/assets/imagen/pesadilla.png"
           />
         </Link>
 
@@ -41,6 +47,14 @@ function Vista11() {
             type="video/mp4"
           />
         </video>
+
+        <Link to="miradas">
+          <img
+            alt="imagen"
+            className="atardecer"
+            src="/assets/imagen/vaca.png"
+          />
+        </Link>
       </div>
     </div>
   );

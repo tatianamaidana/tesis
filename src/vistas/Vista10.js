@@ -13,9 +13,33 @@ function Vista10() {
       style={{ backgroundImage: "url('/assets/imagen/fondo7.jpg')" }}
     >
       <div className="col-i">
-        <video autoPlay loop width={600} height={500}>
+
+
+      <img
+            alt="imagen"
+            className="poesia3"
+            
+            src="/assets/imagen/poesia10.png"
+          />
+
+        <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 10.mp4" type="video/mp4" />
         </video>
+
+        
+
+<video autoPlay loop muted width={550} height={350}>
+          <source src="/assets/video/Extra arboles noche campo.mp4" type="video/mp4" />
+        </video>
+
+        <Link to="retazos">
+          <img
+            alt="imagen"
+            className="atardecer"
+           
+            src="/assets/imagen/vidrio3.JPG"
+          />
+        </Link>
       </div>
 
       <div className="col-d">
@@ -23,8 +47,8 @@ function Vista10() {
           <img
             alt="imagen"
             className="atardecer"
-            width={700} height={500}
-            src="/assets/imagen/fumando.jpg"
+            
+            src="/assets/imagen/fumando.png"
           />
         </Link>
 
@@ -36,7 +60,7 @@ function Vista10() {
 
         <img
             alt="imagen"
-            className="atardecer"
+            className="texto3a"
             src="/assets/imagen/texto10.png"
           />
       </div>

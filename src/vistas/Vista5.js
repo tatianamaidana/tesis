@@ -11,7 +11,7 @@ function Vista5() {
   return (
     <div
       className="fondo-vista"
-      style={{ backgroundImage: "url('/assets/imagen/fondo14.jpg')" }}
+      style={{ backgroundImage: "url('/assets/imagen/fondo25.jpg')" }}
     >
       <div className="col-i">
         <video autoPlay loop width={800} height={600}>
@@ -22,9 +22,22 @@ function Vista5() {
           <img
             alt="imagen"
             className="atardecer"
-            width={700}
-            height={500}
-            src="/assets/imagen/llamada.jpg"
+            src="/assets/imagen/flores2.png"
+          />
+        </Link>
+
+        <img
+            alt="imagen"
+            className="atardecer"
+            src="/assets/imagen/texto5.png"
+          />
+
+<Link to="telarana">
+          <img
+            alt="imagen"
+            className="atardecer"
+            width={600} height={400}
+            src="/assets/imagen/telarana1.jpg"
           />
         </Link>
       </div>
@@ -33,13 +46,18 @@ function Vista5() {
         <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
           <Comentario numero={0} />
-          <Comentario numero={1} />
 
           <img
             alt="imagen"
-            className="atardecer"
-            src="/assets/imagen/texto5.png"
+            className="texto3a"
+            src="/assets/imagen/poesia5.png"
           />
+          <Comentario numero={1} />
+
+          <video className="libros" autoPlay muted loop width={600} height={400}>
+          <source src="/assets/video/libros.mp4" type="video/mp4" />
+        </video>
+         
           <Comentario numero={2} />
         </DataProvider>
       </div>

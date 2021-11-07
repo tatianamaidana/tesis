@@ -13,8 +13,11 @@ function Vista1() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo4.jpg')" }}
     >
+
+<DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
-        <video autoPlay loop width={600} height={500}>
+        <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 1.mp4" type="video/mp4" />
         </video>
 
@@ -25,40 +28,45 @@ function Vista1() {
           src="/assets/imagen/texto1.png"
           alt="imagen"
         />
+ <Comentario numero={0} />
+        <video className= "cielo" autoPlay loop muted width={700} height={500}>
+          <source src="/assets/video/cielo.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div className="col-d">
+        <img
+          className="poesia1"
+          src="/assets/imagen/poesia1.png"
+          alt="imagen"
+        />
 
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
-        
+         
 
-        <Link to="sombra">
-          <img
-            alt="imagen"
-            className="atardecer"
-            src="/assets/imagen/despertando.png"
-          />
-        </Link>
+          <Link to="sombra">
+            <img
+              alt="imagen"
+              className="despertando"
+              src="/assets/imagen/despertando.png"
+            />
+          </Link>
 
-        <Comentario numero={1} />
-       
+          <Comentario numero={1} />
 
-        <Link to="calido">
-          <img
-            alt="imagen"
-            className="libro"
-            widht={600}
-            height={400}
-            src="/assets/imagen/artemis.jpg"
-          />
-        </Link>
+          <Link to="calido">
+            <img
+              alt="imagen"
+              className="libro"
+              widht={600}
+              height={400}
+              src="/assets/imagen/cocina.jpg"
+            />
+          </Link>
 
-        <Comentario numero={2} />
-        </DataProvider>
-
+          <Comentario numero={2} />
+      
       </div>
+      </DataProvider>
     </div>
   );
 }

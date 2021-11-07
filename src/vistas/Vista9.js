@@ -14,7 +14,7 @@ function Vista9() {
       style={{ backgroundImage: "url('/assets/imagen/fondo8.jpg')" }}
     >
       <div className="col-i">
-        <video autoPlay loop width={600} height={500}>
+        <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 9.mp4" type="video/mp4" />
         </video>
         <DataProvider endpoint={`random-comments-by-path/${path}/`}>
@@ -23,14 +23,38 @@ function Vista9() {
           <Comentario numero={1} />
         </DataProvider>
 
-        <Link to="respirar">
+        <Link to="sombra">
           <img
             alt="imagen"
             className="atardecer"
-            width={700} height={500}
-            src="/assets/imagen/libros3.jpg"
+            width={600} height={350}
+            src="/assets/imagen/inicio.jpg"
           />
         </Link>
+
+      </div>
+
+
+      <div className="col-d">
+      <img
+            alt="imagen"
+            className="texto3a"
+          
+            src="/assets/imagen/poesia9.png"
+          />
+      <Link to="respirar">
+          <img
+            alt="imagen"
+            className="atardecer"
+          
+            src="/assets/imagen/libros3.png"
+          />
+        </Link>
+
+        <video className= "vhsvacas" autoPlay loop muted width={650} height={450}>
+          <source src="/assets/video/nieve.mp4" type="video/mp4" />
+        </video>
+
       </div>
     </div>
   );

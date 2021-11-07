@@ -7,6 +7,8 @@ body {
 .fondo-vista {
   display: flex;
   flex-direction: row;
+  background-size: cover;
+  background-repeat:no-repeat;
 }
 
 .col-i {
@@ -291,4 +293,59 @@ body {
 
 ella {
   padding-top: 40px;
+}
+
+.texto1 {
+  padding-left: 450px;
+  
+}
+
+
+
+.poesia1 {
+  padding-right: 350px;
+}
+
+.despertando {
+  padding-left: 100px;
+}
+
+.vacas2 {
+  padding-left: 250px;
+}
+
+.texto3 {
+  padding-left: 350px;
+}
+
+.poesia2{
+  padding-right: 150px;
+}
+
+.texto3a{
+  padding-right: 450px;
+}
+
+.poesia3{
+  padding-left: 450px;
+}
+
+.artemis{
+  padding-right: 250px;
+}
+
+.vhsvacas{
+  padding-right: 150px;
+}
+
+.gato1{
+  padding-right: 150px;
+}
+
+.roto {
+  padding-left: 50px;
+}
+
+.poesia7{
+  padding-left: 150px;
 }

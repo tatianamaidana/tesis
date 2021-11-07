@@ -19,29 +19,32 @@ function Vista2() {
       <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
           <Comentario numero={0} />
-          <Comentario numero={1} />
-        </DataProvider>
 
+          
         <Link to="miradas">
           <img
             alt="imagen"
-            className="despertando"
-            widht={450}
-            height={200}
-            src="/assets/imagen/flores.jpg"
+            className="vacas2"
+            widht={600}
+            height={400}
+            src="/assets/imagen/vacas2.png"
           />
         </Link>
 
+          <Comentario numero={1} />
+        </DataProvider>
+
+
         <img
             alt="imagen"
-            className="despertando"
+            className="texto3"
             widht={329}
             height={335}
             src="/assets/imagen/texto3.png"
           />
 
-        <video autoPlay muted loop width={500} height={300}>
-          <source src="/assets/video/nieve.mp4" type="video/mp4" />
+        <video autoPlay muted loop width={600} height={400}>
+          <source src="/assets/video/Extra atardecer campo.mp4" type="video/mp4" />
         </video>
 
      
@@ -54,11 +57,18 @@ function Vista2() {
 
         <img
             alt="imagen"
-            className="despertando"
+            className="poesia2"
+            src="/assets/imagen/poesia2.png"
+          />
+<Link to="liberar">
+        <img
+            alt="imagen"
+            className="texto3a"
             widht={364}
             height={458}
             src="/assets/imagen/texto3a.png"
           />
+          </Link>
 
       </div>
     </div>

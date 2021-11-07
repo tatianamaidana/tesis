@@ -11,7 +11,7 @@ function Vista6() {
   return (
     <div
       className="fondo-vista"
-      style={{ backgroundImage: "url('/assets/imagen/fondo10.jpg')" }}
+      style={{ backgroundImage: "url('/assets/imagen/fondo26.jpg')" }}
     >
       <div className="col-i">
         <video autoPlay loop width={800} height={600}>
@@ -21,6 +21,17 @@ function Vista6() {
         <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
           <Comentario numero={0} />
+
+          <Link to="herida">
+          <img
+            alt="imagen"
+            className="atardecer"
+            
+            src="/assets/imagen/pesadilla.jpg"
+          />
+        </Link>  
+
+
           <Comentario numero={1} />
         </DataProvider>
       </div>
@@ -30,13 +41,15 @@ function Vista6() {
           <img
             alt="imagen"
             className="atardecer"
-            width={600}
-            height={400}
-            src="/assets/imagen/vidrio1.JPG"
+            src="/assets/imagen/vidrio2.png"
           />
         </Link>
-
-        <video autoPlay loop width={600} height={500}>
+        <img
+            alt="imagen"
+            className="texto3a"
+            src="/assets/imagen/poesia6.png"
+          />
+        <video className= "gato1" autoPlay loop width={600} height={500}>
           <source src="/assets/video/Extra gato campo 2.mp4" type="video/mp4" />
         </video>
       </div>
