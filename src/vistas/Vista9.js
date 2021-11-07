@@ -13,15 +13,16 @@ function Vista9() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo8.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
         <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 9.mp4" type="video/mp4" />
         </video>
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
+        
           <Comentario numero={0} />
           <Comentario numero={1} />
-        </DataProvider>
+        
 
         <Link to="sombra">
           <img
@@ -51,11 +52,14 @@ function Vista9() {
           />
         </Link>
 
+        <Comentario numero={2} />
+
         <video className= "vhsvacas" autoPlay loop muted width={650} height={450}>
           <source src="/assets/video/nieve.mp4" type="video/mp4" />
         </video>
 
       </div>
+      </DataProvider>
     </div>
   );
 }

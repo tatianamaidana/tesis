@@ -13,6 +13,9 @@ function Vista5() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo25.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
+
       <div className="col-i">
         <video autoPlay loop width={800} height={600}>
           <source src="/assets/video/Escena 5.mp4" type="video/mp4" />
@@ -25,6 +28,9 @@ function Vista5() {
             src="/assets/imagen/flores2.png"
           />
         </Link>
+
+        <Comentario numero={0} />
+
 
         <img
             alt="imagen"
@@ -43,24 +49,25 @@ function Vista5() {
       </div>
 
       <div className="col-d">
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
+  
+          <Comentario numero={1} />
 
           <img
             alt="imagen"
             className="texto3a"
             src="/assets/imagen/poesia5.png"
           />
-          <Comentario numero={1} />
+          <Comentario numero={2} />
 
           <video className="libros" autoPlay muted loop width={600} height={400}>
           <source src="/assets/video/libros.mp4" type="video/mp4" />
         </video>
          
-          <Comentario numero={2} />
-        </DataProvider>
+          <Comentario numero={3} />
+        
       </div>
+
+      </DataProvider>
     </div>
   );
 }

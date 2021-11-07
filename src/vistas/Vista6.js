@@ -13,46 +13,50 @@ function Vista6() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo26.jpg')" }}
     >
-      <div className="col-i">
-        <video autoPlay loop width={800} height={600}>
-          <source src="/assets/video/Escena 6.mp4" type="video/mp4" />
-        </video>
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+        <DataProcessor />
 
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
+        <div className="col-i">
+          <video autoPlay loop width={800} height={600}>
+            <source src="/assets/video/Escena 6.mp4" type="video/mp4" />
+          </video>
+
           <Comentario numero={0} />
 
           <Link to="herida">
-          <img
-            alt="imagen"
-            className="atardecer"
-            
-            src="/assets/imagen/pesadilla.jpg"
-          />
-        </Link>  
-
+            <img
+              alt="imagen"
+              className="atardecer"
+              src="/assets/imagen/pesadilla.jpg"
+            />
+          </Link>
 
           <Comentario numero={1} />
-        </DataProvider>
-      </div>
+        </div>
 
-      <div className="col-d">
-        <Link to="retazos">
+        <div className="col-d">
+          <Link to="retazos">
+            <img
+              alt="imagen"
+              className="atardecer"
+              src="/assets/imagen/vidrio2.png"
+            />
+          </Link>
           <img
-            alt="imagen"
-            className="atardecer"
-            src="/assets/imagen/vidrio2.png"
-          />
-        </Link>
-        <img
             alt="imagen"
             className="texto3a"
             src="/assets/imagen/poesia6.png"
           />
-        <video className= "gato1" autoPlay loop width={600} height={500}>
-          <source src="/assets/video/Extra gato campo 2.mp4" type="video/mp4" />
-        </video>
-      </div>
+
+          <Comentario numero={2} />
+          <video className="gato1" autoPlay loop width={600} height={500}>
+            <source
+              src="/assets/video/Extra gato campo 2.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </DataProvider>
     </div>
   );
 }

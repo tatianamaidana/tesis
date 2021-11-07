@@ -13,6 +13,9 @@ function Vista13() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo12.jpg')" }}
     >
+        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
+
       <div className="col-i">
         <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 13.mp4" type="video/mp4" />
@@ -36,14 +39,14 @@ function Vista13() {
           />
         </Link>
 
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
+      
           <Comentario numero={0} />
-          <Comentario numero={1} />
-        </DataProvider>
+          
+      
       </div>
 
       <div className="col-d">
+      <Comentario numero={1} />
         <Link to="introspectivo">
           <img
             alt="imagen"
@@ -56,7 +59,10 @@ function Vista13() {
         <video autoPlay loop muted width={550} height={350}>
           <source src="/assets/video/molino10.mp4" type="video/mp4" />
         </video>
+
+        <Comentario numero={2} />
       </div>
+      </DataProvider>
     </div>
   );
 }

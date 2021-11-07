@@ -13,12 +13,13 @@ function Vista14() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo23.jpg')" }}
     >
+        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
         <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 14.mp4" type="video/mp4" />
         </video>
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
+      
           <Comentario numero={0} />
 
           <img
@@ -28,7 +29,7 @@ function Vista14() {
             src="/assets/imagen/poesia14.png"
           /> 
           <Comentario numero={1} />
-        </DataProvider>
+      
 
         <Link to="respirar">
           <img
@@ -38,11 +39,11 @@ function Vista14() {
             src="/assets/imagen/caminocasa.jpg"
           />
         </Link>
-
-        
       </div>
 
       <div className="col-d">
+
+      <Comentario numero={2} />
         <Link to="liberar">
           <img
             alt="imagen"
@@ -55,7 +56,6 @@ function Vista14() {
         <img
             alt="imagen"
             className="atardecer"
-            
             src="/assets/imagen/poesia14a.png"
           /> 
 
@@ -63,7 +63,7 @@ function Vista14() {
           <source src="/assets/video/extra pajaros.mp4" type="video/mp4" />
         </video>
       </div>
-      
+      </DataProvider>
     </div>
   );
 }

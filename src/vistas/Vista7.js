@@ -12,13 +12,15 @@ function Vista7() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo9.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
         <img
           alt="imagen"
           className="poesia7"
           src="/assets/imagen/poesia7-.png"
         />
-
+ <Comentario numero={0} />
         <Link to="compartir">
           <img
             alt="imagen"
@@ -41,10 +43,6 @@ function Vista7() {
         </video>
 
 
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
-
           <Link to="introspectivo">
           <img
           alt="imagen"
@@ -52,12 +50,14 @@ function Vista7() {
           src="/assets/imagen/texto7.png"
         /> 
         </Link>
-          <Comentario numero={1} />
-        </DataProvider>
+        <Comentario numero={1} />
+          <Comentario numero={2} />
+        
 
 
       
       </div>
+      </DataProvider>
     </div>
   );
 }

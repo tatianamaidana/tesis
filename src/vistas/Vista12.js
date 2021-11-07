@@ -13,6 +13,8 @@ function Vista12() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo6.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
         <video autoPlay loop width={900} height={700}>
           <source
@@ -26,6 +28,8 @@ function Vista12() {
             className="poesia3"
             src="/assets/imagen/texto12.png"
           />
+
+<Comentario numero={0} />
  <Link to="condena">
           <img
             alt="imagen"
@@ -39,9 +43,8 @@ function Vista12() {
 
       <div className="col-d">
 
-      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
+      
+          <Comentario numero={1} />
         
         <Link to="telarana">
           <img
@@ -59,7 +62,7 @@ function Vista12() {
             src="/assets/imagen/poesia12.png"
           />
 
-        <Comentario numero={1} />
+        <Comentario numero={2} />
        
 
         <video autoPlay loop muted width={600} height={500}>
@@ -69,14 +72,15 @@ function Vista12() {
           />
         </video>
 
-        <Comentario numero={2} />
-        </DataProvider> 
+        <Comentario numero={3} />
+        
         <img
             alt="imagen"
             className="texto3a"
             src="/assets/imagen/texto12a.png"
           />
       </div>
+      </DataProvider> 
     </div>
   );
 }

@@ -12,6 +12,8 @@ function Vista10() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo7.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
 
 
@@ -31,6 +33,8 @@ function Vista10() {
 <video autoPlay loop muted width={550} height={350}>
           <source src="/assets/video/Extra arboles noche campo.mp4" type="video/mp4" />
         </video>
+
+        <Comentario numero={0} />
 
         <Link to="retazos">
           <img
@@ -52,11 +56,10 @@ function Vista10() {
           />
         </Link>
 
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
+        
+          
           <Comentario numero={1} />
-        </DataProvider>
+       
 
         <img
             alt="imagen"
@@ -64,6 +67,7 @@ function Vista10() {
             src="/assets/imagen/texto10.png"
           />
       </div>
+      </DataProvider>
     </div>
   );
 }

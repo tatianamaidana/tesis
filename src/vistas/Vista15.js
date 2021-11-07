@@ -13,6 +13,9 @@ function Vista15() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo5.jpg')" }}
     >
+
+<DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
         <Link to="consuelo">
           <img
@@ -22,7 +25,7 @@ function Vista15() {
             src="/assets/imagen/fumando1.png"
           />
         </Link>
-
+        <Comentario numero={0} />
 
         <img
             alt="imagen"
@@ -36,14 +39,13 @@ function Vista15() {
       </div>
 
       <div className="col-d">
-        <video autoPlay loop width={600} height={500}>
+        <video autoPlay loop width={900} height={700}>
           <source src="/assets/video/Escena 15.mp4" type="video/mp4" />
         </video>
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
+       
+          
           <Comentario numero={1} />
-        </DataProvider>
+        
 
         <Link to="poesia">
         <img
@@ -52,8 +54,10 @@ function Vista15() {
           src="/assets/imagen/texto15.png"
         />
         </Link>
-      </div>
 
+        <Comentario numero={2} />
+      </div>
+      </DataProvider>
       
     </div>
   );

@@ -14,10 +14,13 @@ function Vista2() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo2.jpg')" }}
     >
+
+<DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor /> 
+
       <div className="col-i">
 
-      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
+     
           <Comentario numero={0} />
 
           
@@ -32,7 +35,7 @@ function Vista2() {
         </Link>
 
           <Comentario numero={1} />
-        </DataProvider>
+        
 
 
         <img
@@ -69,8 +72,10 @@ function Vista2() {
             src="/assets/imagen/texto3a.png"
           />
           </Link>
+          <Comentario numero={2} />
 
       </div>
+      </DataProvider>
     </div>
   );
 }

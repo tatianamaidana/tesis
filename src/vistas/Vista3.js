@@ -13,6 +13,9 @@ function Vista3() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo21.jpg')" }}
     >
+
+<DataProvider endpoint={`random-comments-by-path/${path}/`}>
+          <DataProcessor />
       <div className="col-i">
         
 
@@ -49,9 +52,6 @@ function Vista3() {
           />
         </Link>
 
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-          <Comentario numero={0} />
           <Comentario numero={1} />
          
 
@@ -61,8 +61,8 @@ function Vista3() {
         </video>
 
         <Comentario numero={2} />
-        </DataProvider>
       </div>
+      </DataProvider>
     </div>
   );
 }

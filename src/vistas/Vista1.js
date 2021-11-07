@@ -13,35 +13,32 @@ function Vista1() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo4.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+        <DataProcessor />
+        <div className="col-i">
+          <video autoPlay loop width={900} height={700}>
+            <source src="/assets/video/Escena 1.mp4" type="video/mp4" />
+          </video>
 
-<DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-      <div className="col-i">
-        <video autoPlay loop width={900} height={700}>
-          <source src="/assets/video/Escena 1.mp4" type="video/mp4" />
-        </video>
+          <img
+            className="texto1"
+            widht={453}
+            height={504}
+            src="/assets/imagen/texto1.png"
+            alt="imagen"
+          />
+          <Comentario numero={0} />
+          <video className="cielo" autoPlay loop muted width={700} height={500}>
+            <source src="/assets/video/cielo.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-        <img
-          className="texto1"
-          widht={453}
-          height={504}
-          src="/assets/imagen/texto1.png"
-          alt="imagen"
-        />
- <Comentario numero={0} />
-        <video className= "cielo" autoPlay loop muted width={700} height={500}>
-          <source src="/assets/video/cielo.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div className="col-d">
-        <img
-          className="poesia1"
-          src="/assets/imagen/poesia1.png"
-          alt="imagen"
-        />
-
-         
+        <div className="col-d">
+          <img
+            className="poesia1"
+            src="/assets/imagen/poesia1.png"
+            alt="imagen"
+          />
 
           <Link to="sombra">
             <img
@@ -64,8 +61,7 @@ function Vista1() {
           </Link>
 
           <Comentario numero={2} />
-      
-      </div>
+        </div>
       </DataProvider>
     </div>
   );
