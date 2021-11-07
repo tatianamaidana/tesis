@@ -52,7 +52,7 @@ export default function Comentario({ numero = 0 }) {
       <div className="contenido-comentario" style={{maxWidth: "700px"}}>
         <p className="comentario-texto">{data[numero]?.text}</p>
         <p className="comentario-autor">
-          {data[numero]?.user.nombre} {data[numero]?.user.apellido}
+          {data[numero]?.user.nombre}
         </p>
       </div>
     </div>

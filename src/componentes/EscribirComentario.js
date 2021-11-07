@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import apiService from "../service/apiService";
 
 export default function EscribirComentario({ visible, close, h }) {
@@ -14,7 +14,7 @@ export default function EscribirComentario({ visible, close, h }) {
     apiService(
       "comments/",
       "POST",
-      { path, user: { nombre, apellido, email }, text: comentario },
+      { path, user: { nombre }, text: comentario },
       true,
       null
     ).then((r) => {
@@ -29,6 +29,11 @@ export default function EscribirComentario({ visible, close, h }) {
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState();
 
+
+  useEffect(() => {
+    setNombre(localStorage.getItem("tesis-tati-nombre") || "")
+  }, []);
+
   const closePopup = () => {
     reset();
     close();
@@ -40,12 +45,7 @@ export default function EscribirComentario({ visible, close, h }) {
   const onChangeNombre = (e) => {
     setNombre(e.target.value);
   };
-  const onChangeApellido = (e) => {
-    setApellido(e.target.value);
-  };
-  const onChangeEmail = (e) => {
-    setEmail(e.target.value);
-  };
+
 
   const reset = () => {
     setLoading(false);
@@ -55,8 +55,6 @@ export default function EscribirComentario({ visible, close, h }) {
 
   const [comentario, setComentario] = useState("");
   const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
-  const [email, setEmail] = useState("");
 
   return !loading && visible ? (
     <div className="escribir-comentario-outer">
@@ -89,23 +87,8 @@ export default function EscribirComentario({ visible, close, h }) {
                       id="nombre"
                     ></input>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <h3>Apellido</h3>
-                    <input
-                      value={apellido}
-                      onChange={onChangeApellido}
-                      name="apellido"
-                      id="apellido"
-                    ></input>
-                  </div>
                 </div>
-                <h3>Email</h3>
-                <input
-                  value={email}
-                  onChange={onChangeEmail}
-                  name="email"
-                  id="email"
-                ></input>
+                
 
                 <div className="escribir-comentario-botones">
                   <button type="reset" onClick={closePopup}>
