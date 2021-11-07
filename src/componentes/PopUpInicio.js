@@ -54,16 +54,6 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
           )
         ) : emocion === EMOCIONES[2] ? (
           !apretado ? (
-            <img alt="imagen" height={80} src="/assets/imagen/boton amor.png" />
-          ) : (
-            <img
-              alt="imagen"
-              height={80}
-              src="/assets/imagen/boton amor apretado.png"
-            />
-          )
-        ) : emocion === EMOCIONES[3] ? (
-          !apretado ? (
             <img
               alt="imagen"
               height={80}
@@ -76,7 +66,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               src="/assets/imagen/boton angustia apretado.png"
             />
           )
-        ) : emocion === EMOCIONES[4] ? (
+        ) : emocion === EMOCIONES[3] ? (
           !apretado ? (
             <img
               alt="imagen"
@@ -90,7 +80,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               src="/assets/imagen/boton curiosidad apretado.png"
             />
           )
-        ) : emocion === EMOCIONES[5] ? (
+        ) : emocion === EMOCIONES[4] ? (
           !apretado ? (
             <img
               alt="imagen"
@@ -104,7 +94,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               src="/assets/imagen/boton melancolia apretado.png"
             />
           )
-        ) : emocion === EMOCIONES[6] ? (
+        ) : emocion === EMOCIONES[5] ? (
           !apretado ? (
             <img
               alt="imagen"
@@ -118,7 +108,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               src="/assets/imagen/boton miedo apretado.png"
             />
           )
-        ) : emocion === EMOCIONES[7] ? (
+        ) : emocion === EMOCIONES[6] ? (
           !apretado ? (
             <img
               alt="imagen"
@@ -172,7 +162,7 @@ const InputNombre = ({ nombre, setNombre }) => {
   );
 };
 
-export default function PopUpInicio({visible, setVisible, enableComments}) {
+export default function PopUpInicio({ visible, setVisible, enableComments }) {
   const [emocionesSeleccionadas, setEmocionesSeleccionadas] = useState([]);
 
   const onClickExterno = (emocion, seleccionada) => {
@@ -200,47 +190,47 @@ export default function PopUpInicio({visible, setVisible, enableComments}) {
 
   const redirect = (es) => {
     if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[5])) {
-      history.push("/telarana")
+      history.push("/telarana");
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[6])) {
-      history.push("/calido")
+      history.push("/calido");
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[4])) {
-      history.push("/compartir")
+      history.push("/compartir");
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[3])) {
-      history.push("/telarana")
+      history.push("/telarana");
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[2])) {
-      history.push("/poesia")
+      history.push("/poesia");
     } else if (es.includes(EMOCIONES[0]) && es.includes(EMOCIONES[1])) {
-      history.push("/calido")
+      history.push("/calido");
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[4])) {
-      history.push("/telarana")
+      history.push("/telarana");
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[3])) {
-      history.push("/sombra")
+      history.push("/sombra");
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[2])) {
-      history.push("/pesadilla")
+      history.push("/pesadilla");
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[6])) {
-      history.push("/herida")
+      history.push("/herida");
     } else if (es.includes(EMOCIONES[5]) && es.includes(EMOCIONES[1])) {
-      history.push("/introspectivo")
+      history.push("/introspectivo");
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[3])) {
-      history.push("/compartir")
+      history.push("/compartir");
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[2])) {
-      history.push("/consuelo")
+      history.push("/consuelo");
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[6])) {
-      history.push("/sombra")
+      history.push("/sombra");
     } else if (es.includes(EMOCIONES[4]) && es.includes(EMOCIONES[1])) {
-      history.push("/calido")
+      history.push("/calido");
     } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[2])) {
-      history.push("/miradas")
+      history.push("/miradas");
     } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[6])) {
-      history.push("/liberar")
+      history.push("/liberar");
     } else if (es.includes(EMOCIONES[3]) && es.includes(EMOCIONES[1])) {
-      history.push("/compartir")
+      history.push("/compartir");
     } else if (es.includes(EMOCIONES[2]) && es.includes(EMOCIONES[6])) {
-      history.push("/liberar")
+      history.push("/liberar");
     } else if (es.includes(EMOCIONES[2]) && es.includes(EMOCIONES[1])) {
-      history.push("/compartir")
+      history.push("/compartir");
     } else if (es.includes(EMOCIONES[1]) && es.includes(EMOCIONES[6])) {
-      history.push("/condena")
+      history.push("/condena");
     }
   };
 
