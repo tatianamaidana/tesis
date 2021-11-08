@@ -52,7 +52,7 @@ function Vista11() {
           <Link to="miradas">
             <img
               alt="imagen"
-              className="atardecer"
+              className="vaca"
               src="/assets/imagen/vaca.png"
             />
           </Link>

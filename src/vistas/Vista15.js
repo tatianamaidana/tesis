@@ -29,11 +29,11 @@ function Vista15() {
 
         <img
             alt="imagen"
-            className="atardecer"
+            className="poesia15"
             src="/assets/imagen/poesia15.png"
           />
 
-<video className = "secuencia" autoPlay loop muted width={550} height={350}>
+<video className = "secuencia" autoPlay loop muted width={650} height={350}>
           <source src="/assets/video/Secuencia 04.mp4" type="video/mp4" />
         </video>
       </div>
@@ -50,7 +50,7 @@ function Vista15() {
         <Link to="poesia">
         <img
           alt="imagen"
-          className="atardecer"
+          className="texto15"
           src="/assets/imagen/texto15.png"
         />
         </Link>

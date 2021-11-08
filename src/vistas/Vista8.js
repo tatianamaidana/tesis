@@ -42,7 +42,7 @@ function Vista8() {
         <div className="col-d">
           <img
             alt="imagen"
-            className="texto3a"
+            className="poesia8"
             src="/assets/imagen/poesia8.png"
           />
 

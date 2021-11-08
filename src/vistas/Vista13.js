@@ -48,7 +48,7 @@ function Vista13() {
           <Link to="introspectivo">
             <img
               alt="imagen"
-              className="atardecer"
+              className="escalera1"
               src="/assets/imagen/escalera1.png"
             />
           </Link>

@@ -53,9 +53,8 @@ function Vista1() {
           <Link to="calido">
             <img
               alt="imagen"
-              className="libro"
-              widht={600}
-              height={400}
+             widht={400}
+              height={300}
               src="/assets/imagen/cocina.jpg"
             />
           </Link>

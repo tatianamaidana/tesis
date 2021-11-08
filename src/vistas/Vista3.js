@@ -24,9 +24,7 @@ function Vista3() {
             <Link to="pesadilla">
               <img
                 alt="imagen"
-                className="ella"
-                widht={700}
-                height={500}
+                className= "mar"
                 src="/assets/imagen/persona mar.png"
               />
             </Link>
