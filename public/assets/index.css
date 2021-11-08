@@ -12,3 +12,24 @@
   font-style: normal;
 }
 
+
+#mobile-root {
+  display: none;
+  width: 100%;
+}
+#mobile-root img{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #root {
+    display: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  #mobile-root {
+    display: block;
+  }
+}
+
