@@ -5,7 +5,7 @@ import DataProcessor from "../service/DataProcessor";
 import { DataProvider } from "../service/DataProvider";
 
 function Vista13() {
-    let path = window.location.pathname;
+  let path = window.location.pathname;
   path = path.replace("/", "");
 
   return (
@@ -13,55 +13,52 @@ function Vista13() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo12.jpg')" }}
     >
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+        <DataProcessor />
 
-      <div className="col-i">
-        <video autoPlay loop width={900} height={700}>
-          <source src="/assets/video/Escena 13.mp4" type="video/mp4" />
-        </video>
+        <div className="col-i">
+          <video autoPlay loop width={900} height={700}>
+            <source src="/assets/video/Escena 13.mp4" type="video/mp4" />
+          </video>
 
-        <img
-            alt="imagen"
-            className="poesia3"
+          <div className="row">
             
-            src="/assets/imagen/poesia13.png"
+            <Link to="necesidad">
+              <img
+                alt="imagen"
+                className="atardecer"
+                width={650}
+                height={450}
+                src="/assets/imagen/flores3.jpg"
+              />
+            </Link>
 
-            
-          />
+            <img
+              alt="imagen"
+              className="poesia13"
+              src="/assets/imagen/poesia13.png"
+            />
 
-<Link to="necesidad">
-          <img
-            alt="imagen"
-            className="atardecer"
-            width={650} height={450}
-            src="/assets/imagen/flores3.jpg"
-          />
-        </Link>
-
-      
+          </div>
           <Comentario numero={0} />
-          
-      
-      </div>
+        </div>
 
-      <div className="col-d">
-      <Comentario numero={1} />
-        <Link to="introspectivo">
-          <img
-            alt="imagen"
-            className="atardecer"
-            
-            src="/assets/imagen/escalera1.png"
-          />
-        </Link>
+        <div className="col-d">
+          <Comentario numero={1} />
+          <Link to="introspectivo">
+            <img
+              alt="imagen"
+              className="atardecer"
+              src="/assets/imagen/escalera1.png"
+            />
+          </Link>
 
-        <video autoPlay loop muted width={550} height={350}>
-          <source src="/assets/video/molino10.mp4" type="video/mp4" />
-        </video>
+          <video autoPlay loop muted width={750} height={450}>
+            <source src="/assets/video/molino10.mp4" type="video/mp4" />
+          </video>
 
-        <Comentario numero={2} />
-      </div>
+          <Comentario numero={2} />
+        </div>
       </DataProvider>
     </div>
   );

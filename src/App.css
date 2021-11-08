@@ -310,16 +310,10 @@ body {
   padding-left: 100px;
 }
 
-ella {
-  padding-top: 40px;
-}
-
 .texto1 {
   padding-left: 450px;
   
 }
-
-
 
 .poesia1 {
   padding-right: 350px;
@@ -346,7 +340,8 @@ ella {
 }
 
 .poesia3{
-  padding-left: 450px;
+  margin-left: -300px;
+  margin-top: -115px;
 }
 
 .artemis{
@@ -354,11 +349,12 @@ ella {
 }
 
 .vhsvacas{
-  padding-right: 150px;
+  padding-right: 50px;
 }
 
 .gato1{
-  padding-right: 150px;
+  padding-right: 200px;
+  margin-top: -90px;
 }
 
 .roto {
@@ -367,6 +363,79 @@ ella {
 
 .poesia7{
   padding-left: 150px;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 0;
+  max-width: 50vw;
+}
+
+.texto7{
+  padding-right: 200px;
+  margin-top: -90px;
+}
+
+.botella{
+padding-right: 350px;
+margin-top: -25px;
+}
+
+.texto8{
+padding-left: 250px;
+margin-top: -80px;
+}
+
+.poesia10{
+  padding-left: 550px;
+}
+
+.escena10{
+  margin-top: -80px;
+}
+
+.arboles{
+  padding-left: 400px;
+}
+
+.poesia11{
+  padding-left: 550px;
+margin-top: -100px;
+}
+
+.escena11{
+  margin-top: -100px;
+}
+
+.texto12{
+  padding-left: 450px;
+  margin-top: -100px;
+}
+
+.poesia13{
+  margin-left: -200px;
+  margin-top: -450px;
+
+}
+
+.poesia14{
+  padding-left: 550px;
+  margin-top: -100px;
+}
+
+.poesia14a{
+  margin-right: 700px;
+  margin-top: -341px;
+}
+
+.secuencia{
+  padding-left: 350px;
+}
+
+.gato2{
+  padding-left: 50px;
 }
 
 
@@ -400,6 +469,7 @@ ella {
 	-webkit-animation: slide-out-bck-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3.5s both;
 	        animation: slide-out-bck-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3.5s both;
 }
+
 
 
 /* ----------------------------------------------

@@ -15,11 +15,13 @@ function Vista7() {
       <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
       <div className="col-i">
+      <Link to="miradas">
         <img
           alt="imagen"
           className="poesia7"
           src="/assets/imagen/poesia7-.png"
         />
+        </Link>
  <Comentario numero={0} />
         <Link to="compartir">
           <img
@@ -31,7 +33,7 @@ function Vista7() {
           />
         </Link>
 
-        <video autoPlay loop muted width={800} height={600}>
+        <video className= "gato2" autoPlay loop muted width={800} height={600}>
           <source src="/assets/video/Extra gato arbol.mp4" type="video/mp4" />
         </video>
       </div>
@@ -46,7 +48,7 @@ function Vista7() {
           <Link to="introspectivo">
           <img
           alt="imagen"
-          className="atardecer"
+          className="texto7"
           src="/assets/imagen/texto7.png"
         /> 
         </Link>

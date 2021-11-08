@@ -5,7 +5,6 @@ import DataProcessor from "../service/DataProcessor";
 import { DataProvider } from "../service/DataProvider";
 
 function Vista2() {
-
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -14,31 +13,25 @@ function Vista2() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo2.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+        <DataProcessor />
 
-<DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor /> 
-
-      <div className="col-i">
-
-     
+        <div className="col-i">
           <Comentario numero={0} />
 
-          
-        <Link to="miradas">
-          <img
-            alt="imagen"
-            className="vacas2"
-            widht={600}
-            height={400}
-            src="/assets/imagen/vacas2.png"
-          />
-        </Link>
+          <Link to="miradas">
+            <img
+              alt="imagen"
+              className="vacas2"
+              widht={600}
+              height={400}
+              src="/assets/imagen/vacas2.png"
+            />
+          </Link>
 
           <Comentario numero={1} />
-        
 
-
-        <img
+          <img
             alt="imagen"
             className="texto3"
             widht={329}
@@ -46,35 +39,36 @@ function Vista2() {
             src="/assets/imagen/texto3.png"
           />
 
-        <video autoPlay muted loop width={600} height={400}>
-          <source src="/assets/video/Extra atardecer campo.mp4" type="video/mp4" />
-        </video>
+          <video autoPlay muted loop width={600} height={400}>
+            <source
+              src="/assets/video/Extra atardecer campo.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
 
-     
-      </div>
-
-      <div className="col-d">
-      <video className="espejito" autoPlay controls width={800} height={700}>
-          <source src="/assets/video/Escena 2.mp4" type="video/mp4" />
-        </video>
-
-        <img
-            alt="imagen"
-            className="poesia2"
-            src="/assets/imagen/poesia2.png"
-          />
-<Link to="liberar">
-        <img
-            alt="imagen"
-            className="texto3a"
-            widht={364}
-            height={458}
-            src="/assets/imagen/texto3a.png"
-          />
+        <div className="col-d">
+          <video className="espejito" autoPlay loop width={800} height={700}>
+            <source src="/assets/video/Escena 2.mp4" type="video/mp4" />
+          </video>
+          <Link to="poesia">
+            <img
+              alt="imagen"
+              className="poesia2"
+              src="/assets/imagen/poesia2.png"
+            />
+          </Link>
+          <Link to="liberar">
+            <img
+              alt="imagen"
+              className="texto3a"
+              widht={364}
+              height={458}
+              src="/assets/imagen/texto3a.png"
+            />
           </Link>
           <Comentario numero={2} />
-
-      </div>
+        </div>
       </DataProvider>
     </div>
   );

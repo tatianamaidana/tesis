@@ -42,11 +42,14 @@ function Vista6() {
               src="/assets/imagen/vidrio2.png"
             />
           </Link>
+
+          <Link to="sombra">
           <img
             alt="imagen"
             className="texto3a"
             src="/assets/imagen/poesia6.png"
           />
+          </Link>
 
           <Comentario numero={2} />
           <video className="gato1" autoPlay loop width={600} height={500}>

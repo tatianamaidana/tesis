@@ -18,15 +18,16 @@ function Vista11() {
         <div className="col-i">
           <Comentario numero={0} />
 
-          <video autoPlay loop width={900} height={700}>
+          <video className= "escena11" autoPlay loop width={900} height={700}>
             <source src="/assets/video/Escena 11.mp4" type="video/mp4" />
           </video>
-
+          <Link to="retazos">
           <img
             alt="imagen"
-            className="poesia3"
+            className="poesia11"
             src="/assets/imagen/poesia11.png"
           />
+          </Link>
           <Comentario numero={1} />
         </div>
 

@@ -13,55 +13,58 @@ function Vista3() {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo21.jpg')" }}
     >
+      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+        <DataProcessor />
+        <div className="col-i">
+          <video autoPlay loop width={800} height={600}>
+            <source src="/assets/video/Escena 3.mp4" type="video/mp4" />
+          </video>
 
-<DataProvider endpoint={`random-comments-by-path/${path}/`}>
-          <DataProcessor />
-      <div className="col-i">
-        
+          <div className="row">
+            <Link to="pesadilla">
+              <img
+                alt="imagen"
+                className="ella"
+                widht={700}
+                height={500}
+                src="/assets/imagen/persona mar.png"
+              />
+            </Link>
 
-        <video autoPlay controls width={800} height={600}>
-          <source src="/assets/video/Escena 3.mp4" type="video/mp4" />
-        </video>
+            <img
+              alt="imagen"
+              className="poesia3"
+              src="/assets/imagen/poesia3.png"
+            />
+          </div>
+        </div>
 
-        <img
-            alt="imagen"
-            className="poesia3"
-           
-            src="/assets/imagen/poesia3.png"
-          />
-
-<Link to="pesadilla">
-          <img
-            alt="imagen"
-            className="ella"
-            widht={700}
-            height={500}
-            src="/assets/imagen/persona mar.png"
-          />
-        </Link>
-      </div>
-
-      <div className="col-d">
-        <Link to="calido">
-          <img
-            alt="artemis"
-            className="ella"
-            widht={700}
-            height={500}
-            src="/assets/imagen/artemis1.png"
-          />
-        </Link>
+        <div className="col-d">
+          <Link to="calido">
+            <img
+              alt="artemis"
+              className="ella"
+              widht={700}
+              height={500}
+              src="/assets/imagen/artemis1.png"
+            />
+          </Link>
 
           <Comentario numero={1} />
-         
 
+          <video
+            className="vhsvacas"
+            autoPlay
+            muted
+            loop
+            width={600}
+            height={400}
+          >
+            <source src="/assets/video/vhs vacas.mp4" type="video/mp4" />
+          </video>
 
-        <video className="vhsvacas" autoPlay muted loop width={600} height={400}>
-          <source src="/assets/video/vhs vacas.mp4" type="video/mp4" />
-        </video>
-
-        <Comentario numero={2} />
-      </div>
+          <Comentario numero={2} />
+        </div>
       </DataProvider>
     </div>
   );
