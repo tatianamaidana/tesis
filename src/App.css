@@ -521,7 +521,7 @@ width: 190% !important;
 
 .slide-out-bck-center {
   -webkit-animation: slide-out-bck-center 1s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s both;
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) 5.5s both;
   animation: slide-out-bck-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s
     both;
 }
