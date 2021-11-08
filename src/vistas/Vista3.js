@@ -35,6 +35,7 @@ function Vista3() {
               alt="imagen"
               className="poesia3"
               src="/assets/imagen/poesia3.png"
+              style={{zIndex: 3}}
             />
           </div>
         </div>

@@ -51,7 +51,7 @@ export default function App() {
 
   return (
     <Router>
-      <div>
+      <div className="router">
         <Switch>
           <Route path="/consuelo">
             <Vista1 />

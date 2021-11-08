@@ -21,7 +21,7 @@ function Vista11() {
           <video className= "escena11" autoPlay loop width={900} height={700}>
             <source src="/assets/video/Escena 11.mp4" type="video/mp4" />
           </video>
-          <Link to="retazos">
+          <Link style={{zIndex: 3}} to="retazos">
           <img
             alt="imagen"
             className="poesia11"

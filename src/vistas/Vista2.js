@@ -51,7 +51,7 @@ function Vista2() {
           <video className="espejito" autoPlay loop width={800} height={700}>
             <source src="/assets/video/Escena 2.mp4" type="video/mp4" />
           </video>
-          <Link to="poesia">
+          <Link style={{zIndex: 3}} to="poesia">
             <img
               alt="imagen"
               className="poesia2"

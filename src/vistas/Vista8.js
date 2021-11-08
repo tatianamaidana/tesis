@@ -20,7 +20,7 @@ function Vista8() {
           <video autoPlay loop width={900} height={700}>
             <source src="/assets/video/Escena 8.mp4" type="video/mp4" />
           </video>
-          <Link to="calido">
+          <Link style={{zIndex: 3}} to="calido">
             <img
               alt="imagen"
               className="texto8"
