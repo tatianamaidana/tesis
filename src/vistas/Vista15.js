@@ -33,7 +33,7 @@ function Vista15() {
             src="/assets/imagen/poesia15.png"
           />
 
-<video autoPlay loop muted width={550} height={350}>
+<video className = "secuencia" autoPlay loop muted width={550} height={350}>
           <source src="/assets/video/Secuencia 04.mp4" type="video/mp4" />
         </video>
       </div>

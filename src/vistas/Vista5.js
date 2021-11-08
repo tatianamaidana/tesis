@@ -51,12 +51,13 @@ function Vista5() {
       <div className="col-d">
   
           <Comentario numero={1} />
-
+          <Link to="pesadilla">
           <img
             alt="imagen"
             className="texto3a"
             src="/assets/imagen/poesia5.png"
           />
+           </Link>
           <Comentario numero={2} />
 
           <video className="libros" autoPlay muted loop width={600} height={400}>

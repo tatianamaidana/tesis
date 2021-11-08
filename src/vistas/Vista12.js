@@ -25,7 +25,7 @@ function Vista12() {
 
         <img
             alt="imagen"
-            className="poesia3"
+            className="texto12"
             src="/assets/imagen/texto12.png"
           />
 
@@ -55,12 +55,13 @@ function Vista12() {
           />
         </Link>
 
-
+        <Link to="consuelo">
         <img
             alt="imagen"
             className="texto3a"
             src="/assets/imagen/poesia12.png"
           />
+          </Link>
 
         <Comentario numero={2} />
        

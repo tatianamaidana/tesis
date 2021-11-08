@@ -20,6 +20,7 @@ function Vista1() {
             <source src="/assets/video/Escena 1.mp4" type="video/mp4" />
           </video>
 
+          <Link to="herida">
           <img
             className="texto1"
             widht={453}
@@ -27,10 +28,9 @@ function Vista1() {
             src="/assets/imagen/texto1.png"
             alt="imagen"
           />
+          </Link>
           <Comentario numero={0} />
-          <video className="cielo" autoPlay loop muted width={700} height={500}>
-            <source src="/assets/video/cielo.mp4" type="video/mp4" />
-          </video>
+          
         </div>
 
         <div className="col-d">
@@ -61,6 +61,10 @@ function Vista1() {
           </Link>
 
           <Comentario numero={2} />
+
+          <video className="cielo" autoPlay loop muted width={700} height={500}>
+            <source src="/assets/video/cielo.mp4" type="video/mp4" />
+          </video>
         </div>
       </DataProvider>
     </div>
