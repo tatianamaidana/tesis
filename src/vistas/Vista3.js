@@ -20,7 +20,7 @@ function Vista3() {
             <source src="/assets/video/Escena 3.mp4" type="video/mp4" />
           </video>
 
-          <div className="row">
+          <div className="row row-vista-3">
             <Link to="pesadilla">
               <img
                 alt="imagen"
