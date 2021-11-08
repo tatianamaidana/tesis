@@ -11,7 +11,7 @@ function Vista12() {
   return (
     <div
       className="fondo-vista"
-      style={{ backgroundImage: "url('/assets/imagen/fondo6.jpg')" }}
+      style={{ backgroundImage: "url('/assets/imagen/Fondo6.jpg')" }}
     >
       <DataProvider endpoint={`random-comments-by-path/${path}/`}>
           <DataProcessor />
