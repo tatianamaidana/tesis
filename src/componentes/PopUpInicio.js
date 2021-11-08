@@ -154,6 +154,7 @@ const InputNombre = ({ nombre, setNombre }) => {
       /> */}
       <input
         value={nombre}
+        autoFocus
         onChange={(e) => {
           setNombre(e.target.value);
         }}

@@ -29,9 +29,8 @@ export default function EscribirComentario({ visible, close, h }) {
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState();
 
-
   useEffect(() => {
-    setNombre(localStorage.getItem("tesis-tati-nombre") || "")
+    setNombre(localStorage.getItem("tesis-tati-nombre") || "");
   }, []);
 
   const closePopup = () => {
@@ -46,12 +45,11 @@ export default function EscribirComentario({ visible, close, h }) {
     setNombre(e.target.value);
   };
 
-
   const reset = () => {
     setLoading(false);
     setResponse(null);
-    setComentario("")
-  }
+    setComentario("");
+  };
 
   const [comentario, setComentario] = useState("");
   const [nombre, setNombre] = useState("");
@@ -71,6 +69,7 @@ export default function EscribirComentario({ visible, close, h }) {
             <div className="escribir-comentario-contenido-inner">
               <form onSubmit={enviarComentario}>
                 <textarea
+                  autoFocus
                   value={comentario}
                   onChange={onChange}
                   name="escribir-comentario"
@@ -88,7 +87,6 @@ export default function EscribirComentario({ visible, close, h }) {
                     ></input>
                   </div>
                 </div>
-                
 
                 <div className="escribir-comentario-botones">
                   <button type="reset" onClick={closePopup}>
