@@ -32,7 +32,10 @@ export default function App() {
 
   const openComments = () => {
     if (commentsEnabled) {
-      setCommentsVisible(true);
+      const random = Math.random();
+      if (random < 0.33) {
+        setCommentsVisible(true);
+      }
     }
   };
 
