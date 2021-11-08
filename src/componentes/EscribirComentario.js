@@ -75,7 +75,7 @@ export default function EscribirComentario({ visible, close, h }) {
                   onChange={onChange}
                   name="escribir-comentario"
                   id="escribir-comentario-textarea"
-                  rows={6}
+                  rows={3}
                 ></textarea>
                 <div className="escribir-comentario-nombre-container">
                   <div style={{ display: "flex", flexDirection: "column" }}>

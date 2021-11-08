@@ -30,30 +30,26 @@ export default function Comentario({ numero = 0 }) {
     }
   }, [random]);
 
+  const url =  choice === 1
+  ? '/assets/imagen/papel 1.png'
+  : choice === 2
+  ? '/assets/imagen/papel 2.png'
+  : choice === 3
+  ? '/assets/imagen/papel 3.png'
+  : choice === 4
+  ? '/assets/imagen/papel 4.png'
+  : null
+
   return data?.length > numero ? (
-    <div className="comentario">
-      <img
-        className="fondo-comentario papel 1.png"
-        widht={500}
-        height={300}
-        src={
-          choice === 1
-            ? "/assets/imagen/papel 1.png"
-            : choice === 2
-            ? "/assets/imagen/papel 2.png"
-            : choice === 3
-            ? "/assets/imagen/papel 3.png"
-            : choice === 4
-            ? "/assets/imagen/papel 4.png"
-            : null
-        }
-        alt="imagen"
-      />
-      <div className="contenido-comentario" style={{maxWidth: "700px"}}>
+    <div
+      className="comentario"
+      style={{
+        backgroundImage: "url('" + url + "')",
+      }}
+    >
+      <div className="contenido-comentario" style={{ maxWidth: "700px" }}>
         <p className="comentario-texto">{data[numero]?.text}</p>
-        <p className="comentario-autor">
-          {data[numero]?.user.nombre}
-        </p>
+        <p className="comentario-autor">{data[numero]?.user.nombre}</p>
       </div>
     </div>
   ) : null;
