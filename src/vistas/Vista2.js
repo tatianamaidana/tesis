@@ -23,8 +23,8 @@ function Vista2() {
             <img
               alt="imagen"
               className="vacas2"
-              widht={600}
-              height={400}
+              widht={550}
+              height={350}
               src="/assets/imagen/vacas2.png"
             />
           </Link>
@@ -39,7 +39,7 @@ function Vista2() {
             src="/assets/imagen/texto3.png"
           />
 
-          <video autoPlay muted loop width={600} height={400}>
+          <video className = "extracampo" autoPlay muted loop width={600} height={400}>
             <source
               src="/assets/video/Extra atardecer campo.mp4"
               type="video/mp4"
