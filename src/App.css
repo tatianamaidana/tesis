@@ -29,6 +29,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   overflow-x: hidden;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .col-i {
