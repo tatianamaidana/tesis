@@ -19,6 +19,7 @@ import Vista14 from "../vistas/Vista14";
 import Vista15 from "../vistas/Vista15";
 import EscribirComentario from "./EscribirComentario";
 import UrlTracker from "./UrlTracker";
+import BotonComentar from "./BotonComentar";
 
 export default function App() {
   const [commentsVisible, setCommentsVisible] = useState(false);
@@ -31,12 +32,7 @@ export default function App() {
   };
 
   const openComments = () => {
-    if (commentsEnabled) {
-      const random = Math.random();
-      if (random < 0.33) {
         setCommentsVisible(true);
-      }
-    }
   };
 
   const enableComments = () => {
@@ -122,6 +118,7 @@ export default function App() {
           </Route>
         </Switch>
         <UrlTracker h={h} setH={setH} open={openComments} />
+        <BotonComentar abrirPopup={openComments} />
         <EscribirComentario
           h={h}
           enabled={commentsEnabled}
