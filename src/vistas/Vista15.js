@@ -49,6 +49,7 @@ function Vista15() {
 
         <Link to="poesia">
         <img
+        className= "texto15"
           alt="imagen"
           className="texto15"
           src="/assets/imagen/texto15.png"
