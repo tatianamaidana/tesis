@@ -8,7 +8,7 @@ function Home({ enableComments }) {
   useEffect(() => {
     setTimeout(() => {
       setPortadaVisible(false);
-    }, 4500);
+    }, 6500);
   },[]);
 
   return (

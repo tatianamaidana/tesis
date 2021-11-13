@@ -372,7 +372,7 @@ body {
 }
 
 .poesia3 {
-  margin-left: -200px;
+  margin-left: 40px;
   margin-top: -115px;
 }
 
@@ -521,7 +521,7 @@ width: 190% !important;
 
 .slide-out-bck-center {
   -webkit-animation: slide-out-bck-center 1s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s both;
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) 5.5s both;
   animation: slide-out-bck-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3.5s
     both;
 }
@@ -594,7 +594,7 @@ width: 190% !important;
 
 @media screen and (max-width: 1800px) {
   .poesia3 {
-    margin-left: -140px;
+    margin-left: 40px;
     margin-top: -75px;
   }
 
@@ -654,7 +654,7 @@ width: 190% !important;
 
 @media screen and (max-width: 1450px) {
   .poesia3 {
-    margin-left: -250px;
+    margin-left: 50px;
     margin-top: -75px;
   }
 
@@ -714,7 +714,7 @@ width: 190% !important;
 
 @media screen and (max-width: 1280px) {
   .poesia3 {
-    margin-left: -280px;
+    margin-left: 50px;
     margin-top: -75px;
   }
 
