@@ -74,18 +74,16 @@ export default function EscribirComentario({ visible, close, h }) {
                   onChange={onChange}
                   name="escribir-comentario"
                   id="escribir-comentario-textarea"
-                  rows={3}
+                  rows={5}
                 ></textarea>
                 <div className="escribir-comentario-nombre-container">
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <h3>Nombre</h3>
+                    <h3>Firma: </h3>
                     <input
                       value={nombre}
                       onChange={onChangeNombre}
                       name="nombre"
                       id="nombre"
                     ></input>
-                  </div>
                 </div>
 
                 <div className="escribir-comentario-botones">
