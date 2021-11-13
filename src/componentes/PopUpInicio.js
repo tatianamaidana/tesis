@@ -238,7 +238,7 @@ export default function PopUpInicio({ visible, setVisible, enableComments }) {
   const [nombre, setNombre] = useState("");
 
   return visible ? (
-    <div className="popup-inicio-dark">
+    <div className="popup-inicio-dark slide-in-fwd-center">
       <div
         className="popup-inicio"
         style={{
