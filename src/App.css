@@ -203,7 +203,7 @@ body {
 
 .boton-emocion:nth-child(1) {
   position: relative;
-  top: -5px;
+  top: -15px;
   left: 2px;
   transform: rotateZ(2deg);
 }
@@ -279,7 +279,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 220px;
+  top: 180px;
   width: 50%;
 }
 
@@ -307,12 +307,12 @@ body {
   align-items: center;
   position: relative;
   top: 20px;
-  width: 300px;
-}
-
-.popup-inicio-input-nombre img {
-  position: absolute;
-  z-index: 101;
+  width: 20%;
+  height: 60px;
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .popup-inicio-input-nombre input {
@@ -320,14 +320,15 @@ body {
   font-size: 1.5rem;
   background-color: transparent;
   padding: 10px;
-  width: 100%;
+  width: 80%;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px dashed #000;
   outline: none;
   text-align: center;
   color: #000;
   font-weight: bold;
   font-family: "typewcond";
+  transform: rotate(-1deg);
 }
 
 .popup-inicio-boton-enviar {
@@ -336,7 +337,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   position: relative;
-  top: 250px;
+  top: 190px;
 }
 .popup-inicio-boton-enviar {
   transition: all 0.3s ease-in-out;

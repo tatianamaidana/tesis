@@ -152,14 +152,7 @@ const BotonEnviar = ({ enabled, onClick }) => {
 
 const InputNombre = ({ nombre, setNombre }) => {
   return (
-    <div className="popup-inicio-input-nombre">
-      {/* <img
-        alt="imagen"
-        className="boton nombre.png"
-        width={500}
-        height={80}
-        src="/assets/imagen/boton nombre.png"
-      /> */}
+    <div className="popup-inicio-input-nombre" style={{backgroundImage: "url('/assets/imagen/nombre.png')"}}>
       <input
         value={nombre}
         autoFocus
