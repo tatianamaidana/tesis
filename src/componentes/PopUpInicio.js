@@ -13,6 +13,7 @@ export const EMOCIONES = [
 
 const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
   const [apretado, setApretado] = useState(false);
+  const [over, setOver] = useState(false);
 
   const click = () => {
     if (seleccionados < 2 || apretado) {
@@ -21,11 +22,18 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
     }
   };
 
+  const onOver = () => {
+    setOver(true);
+  }
+  const onOut = () => {
+    setOver(false);
+  }
+
   return EMOCIONES.includes(emocion) ? (
     <div className="boton-emocion">
-      <button onClick={click}>
+      <button onClick={click} onMouseOver={onOver} onMouseOut={onOut}>
         {emocion === EMOCIONES[0] ? (
-          !apretado ? (
+          !apretado && !over ? (
             <img
               alt="imagen"
               height={90}
@@ -39,11 +47,11 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             />
           )
         ) : emocion === EMOCIONES[1] ? (
-          !apretado ? (
+          !apretado && !over ? (
             <img
               alt="imagen"
               height={80}
-              src="/assets/imagen/boton alegría.png"
+              src="/assets/imagen/boton alegria.png"
             />
           ) : (
             <img
@@ -53,7 +61,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             />
           )
         ) : emocion === EMOCIONES[2] ? (
-          !apretado ? (
+          !apretado && !over ? (
             <img
               alt="imagen"
               height={80}
@@ -67,7 +75,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             />
           )
         ) : emocion === EMOCIONES[3] ? (
-          !apretado ? (
+          !apretado && !over ? (
             <img
               alt="imagen"
               height={80}
@@ -81,7 +89,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             />
           )
         ) : emocion === EMOCIONES[4] ? (
-          !apretado ? (
+          !apretado && !over ? (
             <img
               alt="imagen"
               height={80}
@@ -95,7 +103,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             />
           )
         ) : emocion === EMOCIONES[5] ? (
-          !apretado ? (
+          !apretado && !over ? (
             <img
               alt="imagen"
               height={80}
@@ -109,7 +117,7 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
             />
           )
         ) : emocion === EMOCIONES[6] ? (
-          !apretado ? (
+          !apretado && !over ? (
             <img
               alt="imagen"
               height={80}
