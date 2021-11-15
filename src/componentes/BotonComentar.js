@@ -6,7 +6,7 @@ export default function BotonComentar({abrirPopup}) {
     const location = useLocation();
 
     useEffect(() => {
-        if(location?.pathname !== "/" && location?.pathname !== "/fragmentos"){
+        if(location?.pathname !== "/" && location?.pathname !== "/fragmentos" && location?.pathname !== "/fragmentos/"){
             setVisible(true);
         } else {
             setVisible(false);
