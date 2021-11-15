@@ -51,6 +51,21 @@ body {
   max-width: 50vw;
 }
 
+.boton-creditos {
+  width: 350px;
+  min-height: 250px;
+  z-index: 80;
+  position: relative;
+  top: 20px;
+  left: -10%;
+}
+.boton-creditos button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .boton-comentar {
   position: absolute;
   top: 50%;

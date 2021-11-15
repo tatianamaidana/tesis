@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import apiService from "../service/apiService";
 
-export default function EscribirComentario({ visible, close, h }) {
+export default function EscribirComentario({ visible, close }) {
   const enviarComentario = (e) => {
     e.preventDefault();
     console.log("Envianndo");
     console.log(comentario);
 
-    let path = h[h.length - 2];
+    const path = window.location.pathname;
     path = path.replace("/", "");
+    
     setLoading(true);
 
     apiService(
@@ -77,13 +78,13 @@ export default function EscribirComentario({ visible, close, h }) {
                   rows={5}
                 ></textarea>
                 <div className="escribir-comentario-nombre-container">
-                    <h3>Firma: </h3>
-                    <input
-                      value={nombre}
-                      onChange={onChangeNombre}
-                      name="nombre"
-                      id="nombre"
-                    ></input>
+                  <h3>Firma: </h3>
+                  <input
+                    value={nombre}
+                    onChange={onChangeNombre}
+                    name="nombre"
+                    id="nombre"
+                  ></input>
                 </div>
 
                 <div className="escribir-comentario-botones">

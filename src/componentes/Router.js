@@ -18,95 +18,94 @@ import Vista13 from "../vistas/Vista13";
 import Vista14 from "../vistas/Vista14";
 import Vista15 from "../vistas/Vista15";
 import EscribirComentario from "./EscribirComentario";
-import UrlTracker from "./UrlTracker";
+import Creditos from "./Creditos";
 import BotonComentar from "./BotonComentar";
 
 export default function App() {
   const [commentsVisible, setCommentsVisible] = useState(false);
-
-  const [commentsEnabled, setCommentsEnabled] = useState(false);
-  const [h, setH] = useState([]);
+  const [creditosVisible, setCreditosVisible] = useState(false);
+  const [introLista, setIntroLista] = useState(false);
 
   const closeComments = () => {
     setCommentsVisible(false);
   };
 
   const openComments = () => {
-        setCommentsVisible(true);
+    setCommentsVisible(true);
   };
 
-  const enableComments = () => {
-    setTimeout(() => {
-      setCommentsEnabled(true);
-    }, 1000);
+  const openCreditos = () => {
+    setCreditosVisible(true);
   };
 
-  useEffect(() => {
-    console.log(h);
-  }, [h]);
+  const closeCreditos = () => {
+    setCreditosVisible(false);
+  };
+
+
 
   return (
     <Router>
       <div className="router">
         <Switch>
           <Route path="/consuelo">
-            <Vista1 />
+            <Vista1 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/sombra">
-            <Vista2 />
+            <Vista2 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/miradas">
-            <Vista3 />
+            <Vista3 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/calido">
-            <Vista4 />
+            <Vista4 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/necesidad">
-            <Vista5 />
+            <Vista5 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/condena">
-            <Vista6 />
+            <Vista6 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/retazos">
-            <Vista7 />
+            <Vista7 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/compartir">
-            <Vista8 />
+            <Vista8 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/poesia">
-            <Vista9 />
+            <Vista9 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/respirar">
-            <Vista10 />
+            <Vista10 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/herida">
-            <Vista11 />
+            <Vista11 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/pesadilla">
-            <Vista12 />
+            <Vista12 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/telarana">
-            <Vista13 />
+            <Vista13 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/introspectivo">
-            <Vista14 />
+            <Vista14 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/liberar">
-            <Vista15 />
+            <Vista15 openCreditos={openCreditos} />
           </Route>
 
           <Route path="/prueba">
@@ -114,17 +113,12 @@ export default function App() {
           </Route>
 
           <Route path="/">
-            <Home enableComments={enableComments} />
+            <Home setIntroLista={setIntroLista} />
           </Route>
         </Switch>
-        <UrlTracker h={h} setH={setH} open={openComments} />
-        <BotonComentar abrirPopup={openComments} />
-        <EscribirComentario
-          h={h}
-          enabled={commentsEnabled}
-          visible={commentsVisible}
-          close={closeComments}
-        />
+        <BotonComentar visible={introLista} abrirPopup={openComments} />
+        <EscribirComentario visible={commentsVisible} close={closeComments} />
+        <Creditos visible={creditosVisible} close={closeCreditos} />
       </div>
     </Router>
   );

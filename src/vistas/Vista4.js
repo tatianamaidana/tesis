@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
 import DataProcessor from "../service/DataProcessor";
+import BotonCreditos from "../componentes/BotonCreditos";
 import { DataProvider } from "../service/DataProvider";
 
-function Vista4() {
+function Vista4({openCreditos}) {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -53,17 +54,18 @@ function Vista4() {
           </video>
 
           <Link to="introspectivo">
-          <img
-            className="texto3a"
-            widht={413}
-            height={403}
-            src="/assets/imagen/texto1-07.png"
-            alt="imagen"
-          />
+            <img
+              className="texto3a"
+              widht={413}
+              height={403}
+              src="/assets/imagen/texto1-07.png"
+              alt="imagen"
+            />
           </Link>
-          
 
           <Comentario numero={1} />
+
+          <BotonCreditos abrirPopup={openCreditos} />
         </DataProvider>
       </div>
     </div>

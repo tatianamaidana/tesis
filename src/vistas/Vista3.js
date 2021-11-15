@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
 import DataProcessor from "../service/DataProcessor";
+import BotonCreditos from "../componentes/BotonCreditos";
 import { DataProvider } from "../service/DataProvider";
 
-function Vista3() {
+function Vista3({ openCreditos }) {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -24,7 +25,7 @@ function Vista3() {
             <Link to="pesadilla">
               <img
                 alt="imagen"
-                className= "mar"
+                className="mar"
                 src="/assets/imagen/persona mar.png"
               />
             </Link>
@@ -33,7 +34,7 @@ function Vista3() {
               alt="imagen"
               className="poesia3"
               src="/assets/imagen/poesia3.png"
-              style={{zIndex: 3}}
+              style={{ zIndex: 3 }}
             />
           </div>
         </div>
@@ -63,6 +64,8 @@ function Vista3() {
           </video>
 
           <Comentario numero={2} />
+
+          <BotonCreditos abrirPopup={openCreditos} />
         </div>
       </DataProvider>
     </div>

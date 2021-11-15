@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
 import DataProcessor from "../service/DataProcessor";
+import BotonCreditos from "../componentes/BotonCreditos";
 import { DataProvider } from "../service/DataProvider";
 
-function Vista5() {
+function Vista5({openCreditos}) {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -66,6 +67,8 @@ function Vista5() {
          
           <Comentario numero={3} />
         
+          <BotonCreditos  abrirPopup={openCreditos} />
+
       </div>
 
       </DataProvider>

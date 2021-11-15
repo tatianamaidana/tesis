@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
 import DataProcessor from "../service/DataProcessor";
+import BotonCreditos from "../componentes/BotonCreditos";
 import { DataProvider } from "../service/DataProvider";
 
-function Vista6() {
+function Vista6({ openCreditos }) {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -44,11 +45,11 @@ function Vista6() {
           </Link>
 
           <Link to="sombra">
-          <img
-            alt="imagen"
-            className="texto3a"
-            src="/assets/imagen/poesia6.png"
-          />
+            <img
+              alt="imagen"
+              className="texto3a"
+              src="/assets/imagen/poesia6.png"
+            />
           </Link>
 
           <Comentario numero={2} />
@@ -58,6 +59,8 @@ function Vista6() {
               type="video/mp4"
             />
           </video>
+
+          <BotonCreditos  abrirPopup={openCreditos} />
         </div>
       </DataProvider>
     </div>

@@ -2,7 +2,7 @@ import React, {useEffect,useState} from "react";
 import PopUpInicio from "../componentes/PopUpInicio";
 import Intro from "../componentes/Intro";
 
-function Home({ enableComments }) {
+function Home({ setIntroLista }) {
 
   const [portadaVisible, setPortadaVisible] = useState(true);
   const [poupVisible, setPoupVisible] = useState(false);
@@ -21,7 +21,7 @@ function Home({ enableComments }) {
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
       <Intro visible={portadaVisible} />
-      <PopUpInicio visible={poupVisible} enableComments={enableComments} />
+      <PopUpInicio visible={poupVisible} setIntroLista={setIntroLista} />
     </div>
   );
 }

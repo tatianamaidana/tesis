@@ -24,10 +24,10 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
 
   const onOver = () => {
     setOver(true);
-  }
+  };
   const onOut = () => {
     setOver(false);
-  }
+  };
 
   return EMOCIONES.includes(emocion) ? (
     <div className="boton-emocion">
@@ -38,6 +38,12 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               alt="imagen"
               height={90}
               src="/assets/imagen/boton afecto.png"
+            />
+          ) : !apretado && over ? (
+            <img
+              alt="imagen"
+              height={90}
+              src="/assets/imagen/boton afecto over.png"
             />
           ) : (
             <img
@@ -53,6 +59,12 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               height={80}
               src="/assets/imagen/boton alegria.png"
             />
+          ) : !apretado && over ? (
+            <img
+              alt="imagen"
+              height={80}
+              src="/assets/imagen/boton alegria over.png"
+            />
           ) : (
             <img
               alt="imagen"
@@ -66,6 +78,12 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               alt="imagen"
               height={80}
               src="/assets/imagen/boton angustia.png"
+            />
+          ) : !apretado && over ? (
+            <img
+              alt="imagen"
+              height={80}
+              src="/assets/imagen/boton angustia over.png"
             />
           ) : (
             <img
@@ -81,6 +99,12 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               height={80}
               src="/assets/imagen/boton curiosidad.png"
             />
+          ) : !apretado && over ? (
+            <img
+              alt="imagen"
+              height={80}
+              src="/assets/imagen/boton curiosidad over.png"
+            />
           ) : (
             <img
               alt="imagen"
@@ -94,6 +118,12 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               alt="imagen"
               height={80}
               src="/assets/imagen/boton melancolia.png"
+            />
+          ) : !apretado && over ? (
+            <img
+              alt="imagen"
+              height={80}
+              src="/assets/imagen/boton melancolia over.png"
             />
           ) : (
             <img
@@ -109,6 +139,12 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               height={80}
               src="/assets/imagen/boton miedo.png"
             />
+          ) : !apretado && over ? (
+            <img
+              alt="imagen"
+              height={80}
+              src="/assets/imagen/boton miedo over.png"
+            />
           ) : (
             <img
               alt="imagen"
@@ -122,6 +158,12 @@ const BotonEmocion = ({ emocion, onClickExterno, seleccionados = 0 }) => {
               alt="imagen"
               height={80}
               src="/assets/imagen/boton tristeza.png"
+            />
+          ) : !apretado && over ? (
+            <img
+              alt="imagen"
+              height={80}
+              src="/assets/imagen/boton tristeza over.png"
             />
           ) : (
             <img
@@ -152,7 +194,10 @@ const BotonEnviar = ({ enabled, onClick }) => {
 
 const InputNombre = ({ nombre, setNombre }) => {
   return (
-    <div className="popup-inicio-input-nombre" style={{backgroundImage: "url('/assets/imagen/nombre.png')"}}>
+    <div
+      className="popup-inicio-input-nombre"
+      style={{ backgroundImage: "url('/assets/imagen/nombre.png')" }}
+    >
       <input
         value={nombre}
         autoFocus
@@ -164,7 +209,7 @@ const InputNombre = ({ nombre, setNombre }) => {
   );
 };
 
-export default function PopUpInicio({ visible, setVisible, enableComments }) {
+export default function PopUpInicio({ visible, setIntroLista }) {
   const [emocionesSeleccionadas, setEmocionesSeleccionadas] = useState([]);
 
   const onClickExterno = (emocion, seleccionada) => {
@@ -185,7 +230,7 @@ export default function PopUpInicio({ visible, setVisible, enableComments }) {
       localStorage.setItem("tesis-tati-nombre", nombre);
       localStorage.setItem("tesis-tati-emocion-1", emocionesSeleccionadas[0]);
       localStorage.setItem("tesis-tati-emocion-2", emocionesSeleccionadas[1]);
-      enableComments();
+      setIntroLista(true);
       redirect(emocionesSeleccionadas);
     }
   };

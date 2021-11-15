@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
 import DataProcessor from "../service/DataProcessor";
+import BotonCreditos from "../componentes/BotonCreditos";
 import { DataProvider } from "../service/DataProvider";
 
-function Vista13() {
+function Vista13({ openCreditos }) {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -22,7 +23,6 @@ function Vista13() {
           </video>
 
           <div className="row">
-            
             <Link to="necesidad">
               <img
                 alt="imagen"
@@ -38,7 +38,6 @@ function Vista13() {
               className="poesia13"
               src="/assets/imagen/poesia13.png"
             />
-
           </div>
           <Comentario numero={0} />
         </div>
@@ -58,6 +57,7 @@ function Vista13() {
           </video>
 
           <Comentario numero={2} />
+          <BotonCreditos  abrirPopup={openCreditos} />
         </div>
       </DataProvider>
     </div>

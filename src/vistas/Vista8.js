@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
 import DataProcessor from "../service/DataProcessor";
+import BotonCreditos from "../componentes/BotonCreditos";
 import { DataProvider } from "../service/DataProvider";
 
-function Vista8() {
+function Vista8({openCreditos}) {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -20,7 +21,7 @@ function Vista8() {
           <video autoPlay loop width={900} height={700}>
             <source src="/assets/video/Escena 8.mp4" type="video/mp4" />
           </video>
-          <Link style={{zIndex: 3}} to="calido">
+          <Link style={{ zIndex: 3 }} to="calido">
             <img
               alt="imagen"
               className="texto8"
@@ -66,6 +67,8 @@ function Vista8() {
           >
             <source src="/assets/video/Botella.mp4" type="video/mp4" />
           </video>
+
+          <BotonCreditos  abrirPopup={openCreditos} />
         </div>
       </DataProvider>
     </div>

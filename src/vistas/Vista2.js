@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Comentario from "../componentes/Comentario";
 import DataProcessor from "../service/DataProcessor";
+import BotonCreditos from "../componentes/BotonCreditos";
 import { DataProvider } from "../service/DataProvider";
 
-function Vista2() {
+function Vista2({ openCreditos }) {
   let path = window.location.pathname;
   path = path.replace("/", "");
 
@@ -39,7 +40,14 @@ function Vista2() {
             src="/assets/imagen/texto3.png"
           />
 
-          <video className = "extracampo" autoPlay muted loop width={600} height={400}>
+          <video
+            className="extracampo"
+            autoPlay
+            muted
+            loop
+            width={600}
+            height={400}
+          >
             <source
               src="/assets/video/Extra atardecer campo.mp4"
               type="video/mp4"
@@ -51,7 +59,7 @@ function Vista2() {
           <video className="espejito" autoPlay loop width={800} height={700}>
             <source src="/assets/video/Escena 2.mp4" type="video/mp4" />
           </video>
-          <Link style={{zIndex: 3}} to="poesia">
+          <Link style={{ zIndex: 3 }} to="poesia">
             <img
               alt="imagen"
               className="poesia2"
@@ -68,6 +76,8 @@ function Vista2() {
             />
           </Link>
           <Comentario numero={2} />
+
+          <BotonCreditos abrirPopup={openCreditos} />
         </div>
       </DataProvider>
     </div>
