@@ -66,6 +66,7 @@ function Vista2({ openCreditos }) {
               src="/assets/imagen/poesia2.png"
             />
           </Link>
+          <Comentario numero={2} />
           <Link to="liberar">
             <img
               alt="imagen"
@@ -75,7 +76,6 @@ function Vista2({ openCreditos }) {
               src="/assets/imagen/texto3a.png"
             />
           </Link>
-          <Comentario numero={2} />
 
           <BotonCreditos abrirPopup={openCreditos} />
         </div>

@@ -44,7 +44,7 @@ function Vista9({ openCreditos }) {
           <Link to="respirar">
             <img
               alt="imagen"
-              className="atardecer"
+              className="libros3"
               src="/assets/imagen/libros3.png"
             />
           </Link>

@@ -18,15 +18,15 @@ function Vista13({ openCreditos }) {
         <DataProcessor />
 
         <div className="col-i">
-          <video autoPlay loop width={900} height={700}>
+          <video style={{width: "80%"}} autoPlay loop width={900} height={700}>
             <source src="/assets/video/Escena 13.mp4" type="video/mp4" />
           </video>
 
           <div className="row">
-            <Link to="necesidad">
+            <Link style={{width: "40%"}} to="necesidad">
               <img
                 alt="imagen"
-                className="atardecer"
+                className="florero"
                 width={650}
                 height={450}
                 src="/assets/imagen/flores3.jpg"

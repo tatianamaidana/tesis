@@ -440,7 +440,16 @@ body {
 }
 
 .atardecer {
-  padding-left: 100px;
+  padding-left: 50px;
+  margin-top: 50px;
+  transform: rotate(-3deg);
+}
+
+.libros3 {
+  margin-right: 50px;
+  margin-top: 50px;
+  transform: rotate(2deg);
+  width: 90%;
 }
 
 .texto1 {
@@ -465,7 +474,8 @@ body {
 }
 
 .vacas2 {
-  margin-left: -250px;
+  margin-left: 150px;
+  width: 60%;
 }
 
 .texto3 {
@@ -477,12 +487,15 @@ body {
 }
 
 .texto3a {
-  padding-right: 450px;
+  padding-right: 400px;
+  margin-top: 20px;
+  transform: rotate(-2deg);
 }
 
 .poesia3 {
-  margin-left: 40px;
-  margin-top: -115px;
+  margin-left: -20px;
+  margin-right: 450px;
+  margin-top: -45px;
 }
 
 .mar{
@@ -520,17 +533,16 @@ width: 190% !important;
 
 .texto7 {
   padding-right: 200px;
-  
+  margin-top: 50px;
 }
 
 .botella {
   padding-right: 350px;
-  margin-top: -25px;
+  margin-top: 50px;
 }
 
 .texto8 {
   padding-left: 250px;
-  
 }
 
 .poesia8{
@@ -547,16 +559,21 @@ width: 190% !important;
 }
 
 .escena10 {
-  margin-top: -80px;
+  margin-top: 30px;
+  margin-left: 20px;
+  transform: rotate(1deg);
+  width: 90%;
 }
 
 .arboles {
   padding-left: 400px;
+  margin-top: 30px;
+  margin-left: -50px;
 }
 
 .poesia11 {
   padding-left: 550px;
-  margin-top: -100px;
+  margin-top: 20px;
 }
 
 .escena11 {
@@ -564,18 +581,21 @@ width: 190% !important;
 }
 
 .texto12 {
-  padding-left: 450px;
-  
+  padding-left: 400px;
+  margin-top: 20px;
 }
 
 .poesia13 {
-  margin-left: -150px;
-  margin-top: -50px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .poesia14 {
   padding-left: 550px;
   
+}
+.telaranalink {
+  margin-right: 220px;
 }
 
 .escalera1{
@@ -633,6 +653,12 @@ width: 190% !important;
   -webkit-animation: slide-out-bck-center 1s
     cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: slide-out-bck-center 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.florero {
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 40px;
 }
 
 /* ----------------------------------------------
@@ -745,7 +771,8 @@ width: 190% !important;
 
 @media screen and (max-width: 1800px) {
   .poesia3 {
-    margin-left: 40px;
+    margin-left: -20px;
+    margin-right: 250px;
     margin-top: -75px;
   }
 
@@ -760,7 +787,7 @@ width: 190% !important;
   }
 
   .vacas2 {
-    padding-left: 270px;
+    margin-left: 150px;
   }
   .poesia2 {
     margin-top: -50px;
@@ -771,7 +798,7 @@ width: 190% !important;
   }
   .botella {
     padding-right: 40px;
-    margin-top: -50px;
+    margin-top: 50px;
   }
   .arboles {
     padding-left: 200px;
@@ -789,23 +816,43 @@ width: 190% !important;
   }
   .poesia14 {
     padding-left: 250px;
-    margin-top: -80px;
+    margin-top: 40px;
   }
   .poesia14a {
     margin-left: -300px;
     margin-top: -341px;
     z-index: 3;
   }
+  .telaranalink {
+    margin-right: 150px;
+  }
+  
   .ella {
     height: 420px !important;
     width: auto !important;
     max-width: none !important;
   }
+  .texto7 {
+    padding-right: 100px;
+    margin-top: 50px;
+  }
+  .boton-comentar {
+    width: 300px;
+  }
+  .texto8 {
+    padding-left: 100px;
+  }
+  .texto12 {
+    padding-left: 300px;
+    margin-top: 20px;
+    transform: rotate(-2deg);
+  }
 }
 
 @media screen and (max-width: 1450px) {
   .poesia3 {
-    margin-left: 50px;
+    margin-left: -350px;
+    margin-right: 200px;
     margin-top: -75px;
   }
 
@@ -820,7 +867,7 @@ width: 190% !important;
   }
 
   .vacas2 {
-    padding-left: 270px;
+    margin-left: 150px;
   }
   .poesia2 {
     margin-top: -50px;
@@ -831,13 +878,14 @@ width: 190% !important;
   }
   .botella {
     padding-right: 40px;
-    margin-top: -50px;
+    margin-top: 50px;
   }
   .arboles {
     padding-left: 200px;
   }
   .poesia10 {
     z-index: 3;
+    padding-left: 250px;
   }
   .poesia11 {
     padding-left: 350px;
@@ -849,23 +897,49 @@ width: 190% !important;
   }
   .poesia14 {
     padding-left: 250px;
-    margin-top: -80px;
+    margin-top: 40px;
   }
   .poesia14a {
     margin-left: -300px;
     margin-top: -341px;
     z-index: 3;
   }
+  .telaranalink {
+    margin-right: 120px;
+  }
+  
   .ella {
     height: 400px !important;
     width: auto !important;
     max-width: none !important;
   }
+  .texto7 {
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+  .boton-comentar {
+    width: 280px;
+  }
+  .texto8 {
+    padding-left: 50px;
+  }
+  .libros3 {
+    margin-right: 0;
+    width: 75%;
+    margin-left: 120px;
+  }
+  .atardecer {
+    width: 80%;
+  }
+  .texto12 {
+    padding-left: 200px;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
   .poesia3 {
-    margin-left: 50px;
+    margin-left: -450px;
     margin-top: -75px;
   }
 
@@ -878,9 +952,13 @@ width: 190% !important;
     padding-left: 90px;
     z-index: 2;
   }
+  .mar {
+    position: relative;
+    top: 400px;
+  }
 
   .vacas2 {
-    padding-left: 220px;
+    margin-left: 75px;
   }
   .poesia2 {
     margin-top: -50px;
@@ -898,27 +976,50 @@ width: 190% !important;
   }
   .poesia10 {
     z-index: 3;
+    padding-left: 150px;
   }
   .poesia11 {
     padding-left: 300px;
     margin-top: -50px;
   }
   .poesia13 {
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
     margin-top: 0px;
   }
   .poesia14 {
-    padding-left: 200px;
-    margin-top: -80px;
+    padding-left: 180px;
+    margin-top: 20px;
   }
   .poesia14a {
     margin-left: -350px;
     margin-top: -341px;
     z-index: 3;
   }
+  .telaranalink {
+    margin-right: 20px;
+  }
+  
   .ella {
     height: 350px !important;
     width: auto !important;
     max-width: none !important;
+  }
+  .texto7 {
+    padding-right: 0px;
+    margin-top: 50px;
+  }
+  .boton-comentar {
+    width: 200px;
+  }
+  .texto8 {
+    padding-left: 0px;
+  }
+  .arboles {
+  width: 60%; 
+  }
+  .texto12 {
+    padding-left: 40px;
+    margin-top: 20px;
   }
 }

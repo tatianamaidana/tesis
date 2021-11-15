@@ -209,7 +209,7 @@ const InputNombre = ({ nombre, setNombre }) => {
   );
 };
 
-export default function PopUpInicio({ visible, setIntroLista }) {
+export default function PopUpInicio({ visible }) {
   const [emocionesSeleccionadas, setEmocionesSeleccionadas] = useState([]);
 
   const onClickExterno = (emocion, seleccionada) => {
@@ -230,7 +230,6 @@ export default function PopUpInicio({ visible, setIntroLista }) {
       localStorage.setItem("tesis-tati-nombre", nombre);
       localStorage.setItem("tesis-tati-emocion-1", emocionesSeleccionadas[0]);
       localStorage.setItem("tesis-tati-emocion-2", emocionesSeleccionadas[1]);
-      setIntroLista(true);
       redirect(emocionesSeleccionadas);
     }
   };

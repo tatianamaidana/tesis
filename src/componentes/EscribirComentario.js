@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router";
 import apiService from "../service/apiService";
 
 export default function EscribirComentario({ visible, close }) {
+  const location = useLocation();
   const enviarComentario = (e) => {
     e.preventDefault();
     console.log("Envianndo");
     console.log(comentario);
 
-    const path = window.location.pathname;
+    const path = location.pathname;
     path = path.replace("/", "");
-    
+
     setLoading(true);
 
     apiService(

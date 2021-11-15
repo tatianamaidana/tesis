@@ -43,7 +43,7 @@ function Vista11({openCreditos}) {
 
           <Comentario numero={2} />
 
-          <video autoPlay loop width={600} height={500}>
+          <video style={{marginTop:"50px"}} autoPlay loop width={600} height={500}>
             <source
               src="/assets/video/Extra luna noche campo.mp4"
               type="video/mp4"
@@ -51,7 +51,7 @@ function Vista11({openCreditos}) {
           </video>
 
           <Link to="miradas">
-            <img alt="imagen" className="vaca" src="/assets/imagen/vaca.png" />
+            <img alt="imagen" style={{marginTop:"50px"}} className="vaca" src="/assets/imagen/vaca.png" />
           </Link>
 
           <BotonCreditos  abrirPopup={openCreditos} />

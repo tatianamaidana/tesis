@@ -44,7 +44,7 @@ function Vista14({ openCreditos }) {
           <Link to="liberar">
             <img
               alt="imagen"
-              className="atardecer"
+              className="telaranalink"
               width={500}
               height={400}
               src="/assets/imagen/atardecer1.png"

@@ -18,7 +18,7 @@ function Vista5({openCreditos}) {
           <DataProcessor />
 
       <div className="col-i">
-        <video autoPlay loop width={800} height={600}>
+        <video style={{width: "85%", marginTop: "100px", marginBottom: "100px"}} autoPlay loop width={800} height={600}>
           <source src="/assets/video/Escena 5.mp4" type="video/mp4" />
         </video>
 

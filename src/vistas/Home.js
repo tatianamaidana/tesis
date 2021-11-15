@@ -21,7 +21,7 @@ function Home({ setIntroLista }) {
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
       <Intro visible={portadaVisible} />
-      <PopUpInicio visible={poupVisible} setIntroLista={setIntroLista} />
+      <PopUpInicio visible={poupVisible}/>
     </div>
   );
 }

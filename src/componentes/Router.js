@@ -24,7 +24,6 @@ import BotonComentar from "./BotonComentar";
 export default function App() {
   const [commentsVisible, setCommentsVisible] = useState(false);
   const [creditosVisible, setCreditosVisible] = useState(false);
-  const [introLista, setIntroLista] = useState(false);
 
   const closeComments = () => {
     setCommentsVisible(false);
@@ -41,8 +40,6 @@ export default function App() {
   const closeCreditos = () => {
     setCreditosVisible(false);
   };
-
-
 
   return (
     <Router>
@@ -113,10 +110,10 @@ export default function App() {
           </Route>
 
           <Route path="/">
-            <Home setIntroLista={setIntroLista} />
+            <Home />
           </Route>
         </Switch>
-        <BotonComentar visible={introLista} abrirPopup={openComments} />
+        <BotonComentar abrirPopup={openComments} />
         <EscribirComentario visible={commentsVisible} close={closeComments} />
         <Creditos visible={creditosVisible} close={closeCreditos} />
       </div>
