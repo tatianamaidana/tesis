@@ -9,7 +9,7 @@ export default function EscribirComentario({ visible, close }) {
     console.log("Envianndo");
     console.log(comentario);
 
-    const path = location.pathname;
+    let path = location.pathname;
     path = path.replace("/", "");
 
     setLoading(true);

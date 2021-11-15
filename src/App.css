@@ -778,6 +778,10 @@ width: 190% !important;
     margin-top: -75px;
   }
 
+  .escribir-comentario{
+    transform: scale(0.8);
+  }
+
   .poesia1 {
     padding-right: 0;
     margin-left: -150px;
@@ -953,6 +957,9 @@ width: 190% !important;
 }
 
 @media screen and (max-width: 1280px) {
+  .escribir-comentario{
+    transform: scale(0.7);
+  }
   .poesia3 {
     margin-left: -450px;
     margin-top: -75px;
