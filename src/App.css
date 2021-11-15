@@ -52,12 +52,14 @@ body {
 }
 
 .boton-creditos {
-  width: 350px;
+  width: 200px;
   min-height: 250px;
   z-index: 80;
   position: relative;
   top: 20px;
-  left: -10%;
+  left: -6%;
+  margin-top: 100px;
+
 }
 .boton-creditos button{
   background-color: transparent;
@@ -847,6 +849,10 @@ width: 190% !important;
     margin-top: 20px;
     transform: rotate(-2deg);
   }
+  .boton-creditos {
+    left: -5%;
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 1450px) {
@@ -935,6 +941,15 @@ width: 190% !important;
     padding-left: 200px;
     margin-top: 20px;
   }
+  .boton-creditos {
+    left: -2%;
+    margin-top: 40px;
+  }
+  .boton-creditos {
+    left: -3%;
+    margin-top: 40px;
+  width: 170px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -1022,4 +1037,9 @@ width: 190% !important;
     padding-left: 40px;
     margin-top: 20px;
   }
+.boton-creditos {
+  left: -2%;
+  margin-top: 40px;
+  width: 140px;
+}
 }
