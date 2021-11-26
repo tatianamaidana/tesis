@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 
 export const EMOCIONES = [
@@ -281,6 +281,10 @@ export default function PopUpInicio({ visible }) {
   };
 
   const [nombre, setNombre] = useState("");
+
+  useEffect(() => {
+    setNombre(localStorage.getItem("tesis-tati-nombre") || "");
+  }, []);
 
   return visible ? (
     <div className="popup-inicio-dark slide-in-fwd-center">
