@@ -9,10 +9,10 @@ function Home({ setIntroLista }) {
   useEffect(() => {
     setTimeout(() => {
       setPortadaVisible(false);
-    }, 12500);
+    }, 15500);
     setTimeout(() => {
       setPoupVisible(true);
-    }, 11500);
+    }, 14500);
   },[]);
 
   return (
