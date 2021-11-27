@@ -21,7 +21,7 @@ export default function Intro({ visible }) {
         src="/assets/imagen/Portada.png"
         alt="Yo no quise ser estos fragmentos"
       /> */}
-      <video autoPlay loop width="100%" height="100%">
+      <video muted autoPlay loop width="100%" height="100%">
         <source src="/assets/video/portada.mp4" type="video/mp4" />
       </video>
     </div>
