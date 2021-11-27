@@ -112,6 +112,10 @@ export default function App() {
           <Route path="/">
             <Home />
           </Route>
+
+          <Route path="/fragmentos">
+            <Home />
+          </Route>
         </Switch>
         <BotonComentar abrirPopup={openComments} />
         <EscribirComentario visible={commentsVisible} close={closeComments} />
