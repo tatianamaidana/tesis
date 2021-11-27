@@ -16,7 +16,7 @@ function Vista7({ openCreditos }) {
       <DataProvider endpoint={`random-comments-by-path/${path}`}>
         <DataProcessor />
         <div className="col-i">
-          <Link to="miradas">
+          <Link to="/miradas">
             <img
               alt="imagen"
               className="poesia7"
@@ -24,7 +24,7 @@ function Vista7({ openCreditos }) {
             />
           </Link>
           <Comentario numero={0} />
-          <Link to="compartir">
+          <Link to="/compartir">
             <img
               alt="imagen"
               className="atardecer"
@@ -44,7 +44,7 @@ function Vista7({ openCreditos }) {
             <source src="/assets/video/Escena 7.mp4" type="video/mp4" />
           </video>
 
-          <Link to="introspectivo">
+          <Link to="/introspectivo">
             <img
               alt="imagen"
               className="texto7"

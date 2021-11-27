@@ -20,7 +20,7 @@ function Vista2({ openCreditos }) {
         <div className="col-i">
           <Comentario numero={0} />
 
-          <Link to="miradas">
+          <Link to="/miradas">
             <img
               alt="imagen"
               className="vacas2"
@@ -59,7 +59,7 @@ function Vista2({ openCreditos }) {
           <video className="espejito" autoPlay loop width={800} height={700}>
             <source src="/assets/video/Escena 2.mp4" type="video/mp4" />
           </video>
-          <Link style={{ zIndex: 3 }} to="poesia">
+          <Link style={{ zIndex: 3 }} to="/poesia">
             <img
               alt="imagen"
               className="poesia2"
@@ -67,7 +67,7 @@ function Vista2({ openCreditos }) {
             />
           </Link>
           <Comentario numero={2} />
-          <Link to="liberar">
+          <Link to="/liberar">
             <img
               alt="imagen"
               className="texto3a"

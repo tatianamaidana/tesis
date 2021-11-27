@@ -17,7 +17,7 @@ function Vista15({ openCreditos }) {
       <DataProvider endpoint={`random-comments-by-path/${path}`}>
         <DataProcessor />
         <div className="col-i">
-          <Link to="consuelo">
+          <Link to="/consuelo">
             <img
               alt="imagen"
               className="atardecer"
@@ -51,7 +51,7 @@ function Vista15({ openCreditos }) {
 
           <Comentario numero={1} />
 
-          <Link to="poesia">
+          <Link to="/poesia">
             <img
               className="texto15"
               alt="imagen"

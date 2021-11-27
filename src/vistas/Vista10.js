@@ -44,7 +44,7 @@ function Vista10({ openCreditos }) {
         </div>
 
         <div className="col-d">
-          <Link to="herida">
+          <Link to="/herida">
             <img
               alt="imagen"
               className="atardecer"
@@ -60,7 +60,7 @@ function Vista10({ openCreditos }) {
             src="/assets/imagen/texto10.png"
           />
 
-          <Link to="retazos">
+          <Link to="/retazos">
             <img
               alt="imagen"
               className="atardecer"

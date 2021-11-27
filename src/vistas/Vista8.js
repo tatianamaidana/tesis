@@ -21,7 +21,7 @@ function Vista8({openCreditos}) {
           <video autoPlay loop width={900} height={700}>
             <source src="/assets/video/Escena 8.mp4" type="video/mp4" />
           </video>
-          <Link style={{ zIndex: 3 }} to="calido">
+          <Link style={{ zIndex: 3 }} to="/calido">
             <img
               alt="imagen"
               className="texto8"
@@ -31,7 +31,7 @@ function Vista8({openCreditos}) {
 
           <Comentario numero={0} />
 
-          <Link to="consuelo">
+          <Link to="/consuelo">
             <img
               alt="imagen"
               className="atardecer"
@@ -47,7 +47,7 @@ function Vista8({openCreditos}) {
             src="/assets/imagen/poesia8.png"
           />
 
-          <Link to="poesia">
+          <Link to="/poesia">
             <img
               alt="imagen"
               className="atardecer"

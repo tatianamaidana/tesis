@@ -24,7 +24,7 @@ function Vista9({ openCreditos }) {
           <Comentario numero={0} />
           <Comentario numero={1} />
 
-          <Link to="sombra">
+          <Link to="/sombra">
             <img
               alt="imagen"
               className="atardecer"
@@ -41,7 +41,7 @@ function Vista9({ openCreditos }) {
             className="texto3a"
             src="/assets/imagen/poesia9.png"
           />
-          <Link to="respirar">
+          <Link to="/respirar">
             <img
               alt="imagen"
               className="libros3"

@@ -21,7 +21,7 @@ function Vista1({openCreditos}) {
             <source src="/assets/video/Escena 1.mp4" type="video/mp4" />
           </video>
 
-          <Link to="herida">
+          <Link to="/herida">
             <img
               className="texto1"
               widht={453}
@@ -40,7 +40,7 @@ function Vista1({openCreditos}) {
             alt="imagen"
           />
 
-          <Link to="sombra">
+          <Link to="/sombra">
             <img
               alt="imagen"
               className="despertando"
@@ -50,7 +50,7 @@ function Vista1({openCreditos}) {
 
           <Comentario numero={1} />
 
-          <Link to="calido">
+          <Link to="/calido">
             <img
               alt="imagen"
               widht={400}

@@ -24,7 +24,7 @@ function Vista6({ openCreditos }) {
 
           <Comentario numero={0} />
 
-          <Link to="herida">
+          <Link to="/herida">
             <img
               alt="imagen"
               className="atardecer"
@@ -36,7 +36,7 @@ function Vista6({ openCreditos }) {
         </div>
 
         <div className="col-d">
-          <Link to="retazos">
+          <Link to="/retazos">
             <img
               alt="imagen"
               className="atardecer"
@@ -44,7 +44,7 @@ function Vista6({ openCreditos }) {
             />
           </Link>
 
-          <Link to="sombra">
+          <Link to="/sombra">
             <img
               alt="imagen"
               className="texto3a"

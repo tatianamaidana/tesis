@@ -15,7 +15,7 @@ function Vista4({openCreditos}) {
       style={{ backgroundImage: "url('/assets/imagen/fondo1.jpg')" }}
     >
       <div className="col-i">
-        <Link to="necesidad">
+        <Link to="/necesidad">
           <img
             className="libro2"
             widht={700}
@@ -30,7 +30,7 @@ function Vista4({openCreditos}) {
           src="/assets/imagen/poesia4.png"
           alt="imagen"
         />
-        <Link to="compartir">
+        <Link to="/compartir">
           <img
             className="pileta"
             widht={700}
@@ -53,7 +53,7 @@ function Vista4({openCreditos}) {
             <source src="/assets/video/Escena 4.mp4" type="video/mp4" />
           </video>
 
-          <Link to="introspectivo">
+          <Link to="/introspectivo">
             <img
               className="texto3a"
               widht={413}

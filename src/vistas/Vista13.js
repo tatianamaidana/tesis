@@ -23,7 +23,7 @@ function Vista13({ openCreditos }) {
           </video>
 
           <div className="row">
-            <Link style={{width: "40%"}} to="necesidad">
+            <Link style={{width: "40%"}} to="/necesidad">
               <img
                 alt="imagen"
                 className="florero"
@@ -44,7 +44,7 @@ function Vista13({ openCreditos }) {
 
         <div className="col-d">
           <Comentario numero={1} />
-          <Link to="introspectivo">
+          <Link to="/introspectivo">
             <img
               alt="imagen"
               className="escalera1"

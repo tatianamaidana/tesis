@@ -22,7 +22,7 @@ function Vista11({openCreditos}) {
           <video className="escena11" autoPlay loop width={900} height={700}>
             <source src="/assets/video/Escena 11.mp4" type="video/mp4" />
           </video>
-          <Link style={{ zIndex: 3 }} to="retazos">
+          <Link style={{ zIndex: 3 }} to="/retazos">
             <img
               alt="imagen"
               className="poesia11"
@@ -33,7 +33,7 @@ function Vista11({openCreditos}) {
         </div>
 
         <div className="col-d">
-          <Link to="pesadilla">
+          <Link to="/pesadilla">
             <img
               alt="imagen"
               className="vhsvacas"
@@ -50,7 +50,7 @@ function Vista11({openCreditos}) {
             />
           </video>
 
-          <Link to="miradas">
+          <Link to="/miradas">
             <img alt="imagen" style={{marginTop:"50px"}} className="vaca" src="/assets/imagen/vaca.png" />
           </Link>
 

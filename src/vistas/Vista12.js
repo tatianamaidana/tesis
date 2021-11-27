@@ -28,7 +28,7 @@ function Vista12({ openCreditos }) {
           />
 
           <Comentario numero={0} />
-          <Link to="condena">
+          <Link to="/condena">
             <img
               alt="imagen"
               className="atardecer"
@@ -40,7 +40,7 @@ function Vista12({ openCreditos }) {
         <div className="col-d">
           <Comentario numero={1} />
 
-          <Link to="telarana">
+          <Link to="/telarana">
             <img
               alt="imagen"
               className="atardecer"
@@ -48,7 +48,7 @@ function Vista12({ openCreditos }) {
             />
           </Link>
 
-          <Link to="consuelo">
+          <Link to="/consuelo">
             <img
               alt="imagen"
               className="texto3a"

@@ -22,7 +22,7 @@ function Vista3({ openCreditos }) {
           </video>
 
           <div className="row row-vista-3">
-            <Link to="pesadilla">
+            <Link to="/pesadilla">
               <img
                 alt="imagen"
                 className="mar"
@@ -40,7 +40,7 @@ function Vista3({ openCreditos }) {
         </div>
 
         <div className="col-d">
-          <Link to="calido">
+          <Link to="/calido">
             <img
               alt="artemis"
               className="ella"

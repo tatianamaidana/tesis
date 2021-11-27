@@ -30,7 +30,7 @@ function Vista14({ openCreditos }) {
           />
           <Comentario numero={1} />
 
-          <Link to="respirar">
+          <Link to="/respirar">
             <img
               alt="imagen"
               className="atardecer"
@@ -41,7 +41,7 @@ function Vista14({ openCreditos }) {
 
         <div className="col-d">
           <Comentario numero={2} />
-          <Link to="liberar">
+          <Link to="/liberar">
             <img
               alt="imagen"
               className="telaranalink"

@@ -22,7 +22,7 @@ function Vista5({openCreditos}) {
           <source src="/assets/video/Escena 5.mp4" type="video/mp4" />
         </video>
 
-        <Link to="condena">
+        <Link to="/condena">
           <img
             alt="imagen"
             className="atardecer"
@@ -39,7 +39,7 @@ function Vista5({openCreditos}) {
             src="/assets/imagen/texto5.png"
           />
 
-<Link to="telarana">
+<Link to="/telarana">
           <img
             alt="imagen"
             className="atardecer"
@@ -52,7 +52,7 @@ function Vista5({openCreditos}) {
       <div className="col-d">
   
           <Comentario numero={1} />
-          <Link to="pesadilla">
+          <Link to="/pesadilla">
           <img
             alt="imagen"
             className="texto3a"
