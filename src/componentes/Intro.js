@@ -6,7 +6,7 @@ export default function Intro({ visible }) {
   useEffect(() => {
     setTimeout(() => {
       setVisibleThis(true);
-    }, 14500);
+    }, 17500);
   });
 
   return visible ? (
