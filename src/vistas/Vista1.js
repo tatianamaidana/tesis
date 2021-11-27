@@ -14,7 +14,7 @@ function Vista1({openCreditos}) {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/fondo4.jpg')" }}
     >
-      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+      <DataProvider endpoint={`random-comments-by-path/${path}`}>
         <DataProcessor />
         <div className="col-i">
           <video autoPlay loop width={900} height={700}>

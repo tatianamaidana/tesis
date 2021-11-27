@@ -14,7 +14,7 @@ function Vista6({ openCreditos }) {
       className="fondo-vista"
       style={{ backgroundImage: "url('/assets/imagen/Fondo26.jpg')" }}
     >
-      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+      <DataProvider endpoint={`random-comments-by-path/${path}`}>
         <DataProcessor />
 
         <div className="col-i">

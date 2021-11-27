@@ -18,7 +18,7 @@ function PruebaComentarios() {
       className="molino"
       style={{ backgroundImage: "url('/assets/imagen/fondo4.jpg')" }}
     >
-      <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+      <DataProvider endpoint={`random-comments-by-path/${path}`}>
         <DataProcessor />
         <Comentario numero={0} />
         <Comentario numero={1} />

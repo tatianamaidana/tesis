@@ -45,7 +45,7 @@ function Vista4({openCreditos}) {
         </video>
       </div>
       <div className="col-d">
-        <DataProvider endpoint={`random-comments-by-path/${path}/`}>
+        <DataProvider endpoint={`random-comments-by-path/${path}`}>
           <DataProcessor />
           <Comentario numero={0} />
 
